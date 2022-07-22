@@ -116,10 +116,11 @@ def get_agents():
     return agents
 
 
-def get_network_edges(agents):
+def get_network_edges(agents, classes=None):
     blacklist = {'Background'}
     lookup = ontology_name_lookup()
     network = defaultdict(list)
+    class_names = {cl['name'] for cl in classes} if classes else None
     for doc_path, doc_agents in agents.items():
         pmid = os.path.splitext(os.path.basename(doc_path))[0]
         groundings = {a.db_refs['SPINE'] for a in doc_agents if
@@ -127,7 +128,9 @@ def get_network_edges(agents):
         for a, b in itertools.combinations(groundings, 2):
             aname = lookup[a]
             bname = lookup[b]
-            if aname in blacklist or bname in blacklist:
+            if aname in blacklist or bname in blacklist or \
+                    (classes and (aname not in class_names
+                                  or bname not in class_names)):
                 continue
             network[tuple(sorted([aname, bname]))].append(pmid)
     return network
