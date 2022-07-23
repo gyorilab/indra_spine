@@ -80,7 +80,7 @@ class BuildGraph(Resource):
         for term in request.json.get('terms', []):
             pmids |= set(pubmed_client.get_ids(term))
         if not pmids:
-            abort(Response('No PMIDs found for the given terms.', 400))
+            abort(400, 'No PMIDs found for the given terms.')
         agents[request.json['name_search']] = {
             k: v for k, v in agents['pubmed_fatigue'].items() if k in pmids
         }
@@ -95,11 +95,11 @@ class GetNetwork(Resource):
         name_search = request.json['name_search']
         agents_search = agents.get(name_search)
         if not agents_search:
-            abort(Response('No search context found with the given name.', 400))
+            abort(400, 'No search context found with the given name.')
         classes = request.json.get('classes')
         edges = get_network_edges(agents_search, classes)
         if not edges:
-            abort(Response('No edges found for the given search.', 400))
+            abort(400, 'No edges found for the given search.')
         network = get_nice_cx_network(edges)
         cx = network.to_cx()
         return jsonify(cx)
