@@ -77,8 +77,10 @@ class BuildGraph(Resource):
     @base_ns.expect(build_graph_input_model)
     def post(self):
         pmids = set()
-        for term in request.json.get('terms'):
+        for term in request.json.get('terms', []):
             pmids |= set(pubmed_client.get_ids(term))
+        if not pmids:
+            abort(Response('No PMIDs found for the given terms.', 400))
         agents[request.json['name_search']] = {
             k: v for k, v in agents['pubmed_fatigue'].items() if k in pmids
         }
@@ -93,11 +95,11 @@ class GetNetwork(Resource):
         name_search = request.json['name_search']
         agents_search = agents.get(name_search)
         if not agents_search:
-            return jsonify({})
+            abort(Response('No search context found with the given name.', 400))
         classes = request.json.get('classes')
         edges = get_network_edges(agents_search, classes)
         if not edges:
-            return jsonify({})
+            abort(Response('No edges found for the given search.', 400))
         network = get_nice_cx_network(edges)
         cx = network.to_cx()
         return jsonify(cx)
