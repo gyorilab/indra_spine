@@ -1,16 +1,15 @@
 #adding in adverbs and directions
-directions = ("(medial|lateral|superior|posterior|dorsal|ipsilateral|efferent|outer|central|caudal|afferent|contralateral|ventral|frontal|"              
-"terminal|rostral|inner|anterior|ascending|peripheral|Descending|adjacent|secondary|afferent|auditory ascending|Afferent)")
-
-advb = ("(cortical|spinal|primary|sensory|motor|projection|visual|auditory|sensorimotor|basal|periaqueductal|limbic|tectal|dentate|"
-"entorhinal|subcortical|somatosensory|olfactory|isthmic|cingulate|orbitofrontal|Intrahemispheric|geniculocortical|associational|"
-"primary mechanosensory|organum|septal|Tectal|dense cortical|Cortical|mesopontine tegmental|primary trigeminal|hypoglossal|"
-"occipital|parahippocampal|cerebellar|major|intramedullary|corticofugal|suprageniculate|parvocellular|paraventricular|"
-"cortico/-/cortical|temporal|lateral nuclei|centralis|sympatho/-/excitatory reticulospinal|vestibulospinal|neocortical|"
-"reticulospinal|retinofugal|subthalamic|contralateral homologous|neural|trigeminal|vagus|glossopharyngeal|preganglionic|"
-"ophthalmic|vestibular primary|perirhinal|maxillar|postrhinal|intrahemispheric|pretectal|hypothalamic|Auditory|rubro/-/spinal|"
-"posterolateral|reticulata|pre/-/frontal|preoptic|Pretectal|rubral|cortico/-/|mossy|Spinal|Retinal|amygdalostriatal|"
-"interhemispheric|intercollicular|locus|Associational|lateralis|vestibular|caudolateral|multipolar|retinogeniculocortical)")
+noun_inputs = ("(medial|lateral|superior|posterior|dorsal|ipsilateral|efferent|outer|central|caudal|afferent|contralateral|ventral|frontal|"
+	       "terminal|rostral|inner|anterior|ascending|peripheral|Descending|adjacent|secondary|afferent|auditory ascending|Afferent|"
+	       "cortical|spinal|primary|sensory|motor|projection|visual|auditory|sensorimotor|basal|periaqueductal|limbic|tectal|dentate|"
+	       "entorhinal|subcortical|somatosensory|olfactory|isthmic|cingulate|orbitofrontal|Intrahemispheric|geniculocortical|associational|"
+	       "primary mechanosensory|organum|septal|Tectal|dense cortical|Cortical|mesopontine tegmental|primary trigeminal|hypoglossal|"
+	       "occipital|parahippocampal|cerebellar|major|intramedullary|corticofugal|suprageniculate|parvocellular|paraventricular|"
+	       "cortico/-/cortical|temporal|lateral nuclei|centralis|sympatho/-/excitatory reticulospinal|vestibulospinal|neocortical|"
+	       "reticulospinal|retinofugal|subthalamic|contralateral homologous|neural|trigeminal|vagus|glossopharyngeal|preganglionic|"
+	       "ophthalmic|vestibular primary|perirhinal|maxillar|postrhinal|intrahemispheric|pretectal|hypothalamic|Auditory|rubro/-/spinal|"
+	       "posterolateral|reticulata|pre/-/frontal|preoptic|Pretectal|rubral|cortico/-/|mossy|Spinal|Retinal|amygdalostriatal|"
+	       "interhemispheric|intercollicular|locus|Associational|lateralis|vestibular|caudolateral|multipolar|retinogeniculocortical)")
 
 #add all noun cases to set, loop through, do either nouncase with np, np with nouncase, or nouncase with nouncase
 #{}* ensures that advb or direction inserted is optional, includes cases where neither is found
@@ -36,67 +35,54 @@ phenotype_f = ["(?<phenotype> [chunk=B-Disease]|[chunk=I-Disease]|[chunk=B-Disea
               "(?<phenotype> [chunk=B-Disease]|[chunk=I-Disease]|[chunk=B-Disease][chunk=I-Disease])/,/ and ([chunk=B-Disease]|[chunk=I-Disease]|[chunk=B-Disease][chunk=I-Disease])",
               "([chunk=B-Disease]|[chunk=I-Disease]|[chunk=B-Disease][chunk=I-Disease])/,/ and (?<phenotype> [chunk=B-Disease]|[chunk=I-Disease]|[chunk=B-Disease][chunk=I-Disease])"]
 
-#namedx_np_f = "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP])"
-lemmas_br_br = ["project","connect","pathway"]
-lemmas_br_ph = ["implicate","play","develop","involve","regulate","control"]
-damage = ["damage","loss of function","impairs","impairment","defect"]
-from_to_ph = [">nmod_from",">nmod_of",">nmod_to",">nmod_in",">nmod_with"]
-fromto = [">nmod_from",">nmod_of",">nmod_to"]
-#rule_combos = [namedx_np_f,noun_case_f]
-noun_inputs = [directions,advb]
-
+lemmas_br_br = "lemma=project|lemma=connect|lemma=pathway"
+lemmas_br_ph = "lemma=implicate|lemma=play|lemma=develop|lemma=involve|lemma=regulate|lemma=control"
+damage = "damage|loss of function|impairs|impairment|defect"
+from_to_ph = "(>nmod_from)|(>nmod_of)|(>nmod_to)|(>nmod_in)|(>nmod_with)"
+fromto = "(>nmod_from)|(>nmod_of)|(>nmod_to)"
 
 #rule generation
-def create_br_br_rules(noun_type1,noun_input1,lemma,word,noun_type2,noun_input2):
+def create_br_br_rules(br_rule1,br_rule2):
 
-    #fromto_portion = [">nmod_{}".format(word) for word in fromto]
-    #lemma_portion = ["[lemma={}]".format(term) for term in lemmas]
-    #entity_types = ['namedx','case']
-    #create two word cases for BRs with noun_input of either advb or direction
-    #entity1 = noun_type1
-    #entity2 = noun_type2
-   
-    #if noun_type1 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP])":
-    if noun_type1 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
-        entity1 = noun_type1.format(noun_input1)
+    if br_rule1 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
+        entity1 = br_rule1.format(noun_inputs)
     else:
-        entity1 = noun_type1.format(noun_input1,noun_input1)
+        entity1 = br_rule1.format(noun_inputs,noun_inputs)
         
-    #if noun_type2 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP])":
-    if noun_type2 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
-        entity2 = noun_type2.format(noun_input2)
+    if br_rule2 == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
+        entity2 = br_rule2.format(noun_inputs)
     else:
-        entity2 = noun_type2.format(noun_input2,noun_input2)
+        entity2 = br_rule2.format(noun_inputs,noun_inputs)
 
     #create rules with whatever the current case is of each entity
-    rule_set = ["{} [lemma={}] {} {}".format(entity1,lemma,word,entity2),
-                "{} [] [] [] [lemma={}] {} {}".format(entity1,lemma,word,entity2),
-                "[lemma={}] >nmod_from {} >nmod_to {}".format(lemma,entity1,entity2),
-                "[lemma={}] >nmod_of {} >nmod_with {}".format(lemma,entity1,entity2),
-                "[lemma={}] [] [] [] [] {} >nmod_to {}".format(lemma,entity1,entity2),
-                "[lemma={}] >nmod_to {} >nmod_from [] [] {}".format(lemma,entity1,entity2),
-                "{} [] [] [] [lemma={}] {} {}".format(entity1,lemma,word,entity2),
-                "{} [lemma=afferent] {} {}".format(entity1,word,entity2),
-                "{} which [] [] [lemma={}] >nmod_to {}".format(entity1,lemma,entity2)]
+    rule_set = ["{} [{}] {} {}".format(entity1,lemmas_br_br,fromto,entity2),
+                "{} [] [] [] [{}] {} {}".format(entity1,lemmas_br_br,fromto,entity2),
+                "[{}] >nmod_from {} >nmod_to {}".format(lemmas_br_br,entity1,entity2),
+                "[{}] >nmod_of {} >nmod_with {}".format(lemmas_br_br,entity1,entity2),
+                "[{}] [] [] [] [] {} >nmod_to {}".format(lemmas_br_br,entity1,entity2),
+                "[{}] >nmod_to {} >nmod_from [] [] {}".format(lemmas_br_br,entity1,entity2),
+                "{} [] [] [] [{}] {} {}".format(entity1,lemmas_br_br,fromto,entity2),
+                "{} [lemma=afferent] {} {}".format(entity1,fromto,entity2),
+                "{} which [] [] [{}] >nmod_to {}".format(entity1,lemmas_br_br,entity2)]
     return rule_set
      
-def create_br_ph_rules(region,noun_input,lemma,damage,word,phenotype):
+def create_br_ph_rules(br_rule,ph_rule):
 
-    if region == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
-        entity1 = region.format(noun_input)
+    if br_rule == "{}* (?<region> [chunk=B-NP]|[chunk=I-NP]|[chunk=B-NP][chunk=I-NP]|[chunk=B-Organ]|[chunk=I-Organ]|[chunk=B-Organ][chunk=I-Organ]|[chunk=B-TissueType]|[chunk=I-TissueType]|[chunk=B-TissueType][chunk=I-TissueType])":
+        entity1 = br_rule.format(noun_inputs)
     else:
-        entity1 = region.format(noun_input,noun_input)
+        entity1 = br_rule.format(noun_inputs,noun_inputs)
 
-    entity2 = phenotype
+    entity2 = ph_rule
 
     #create rules with whatever the current case is of each entity
-    rule_set = ["{}|{} [lemma={}] {} {}|{}".format(entity1,entity2,lemma,word,entity1,entity2),
-                "{}|{} [] [] [] [lemma={}] {} {}|{}".format(entity1,entity2,lemma,word,entity1,entity2),
-                "{}|{} [lemma={}] {} {} {} {}|{}".format(entity1,entity2,lemma,word,damage,word,entity1,entity2),
-                "{}|{} [] [] [] [lemma={}] {} {}|{}".format(entity1,entity2,lemma,word,entity1,entity2),
-		"{}|{} [lemma={}] [] [] [] {} {}|{}".format(entity1,entity2,lemma,word,entity1,entity2),
-		"{}|{} [] [] [] [lemma={}] {} {} {} {}|{}".format(entity1,entity2,lemma,word,damage,word,entity1,entity2),    
-                "{}|{} [lemma={}] [] [] [] {} {} {} {}|{}".format(entity1,entity2,lemma,word,damage,word,entity1,entity2)]
+    rule_set = ["{}|{} [{}] {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,entity1,entity2),
+                "{}|{} [] [] [] [{}] {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,entity1,entity2),
+                "{}|{} [{}] {} {} {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,damage,from_to_ph,entity1,entity2),
+                "{}|{} [] [] [] [{}] {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,entity1,entity2),
+		"{}|{} [{}] [] [] [] {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,entity1,entity2),
+		"{}|{} [] [] [] [{}] {} {} {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,damage,from_to_ph,entity1,entity2),    
+                "{}|{} [{}] [] [] [] {} {} {} {}|{}".format(entity1,entity2,lemmas_br_ph,from_to_ph,damage,from_to_ph,entity1,entity2)]
     return rule_set
     
 
