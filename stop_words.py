@@ -29,14 +29,14 @@ exclude_words = ['normal','eminence','diurnal','targets','red','several','one','
                  'Taste','anterograde','tall','Morphology','line','cap','Area','vesicle','existing reports','distinct','similar',
                  'compartments','homotopic','populations','corresponding','axonal tracers','budgerigars','redial','retrograde','small',
                  'semicircular canal','group','shell','number','rotated','expression','marsupial','discrete','study','somatostatin',
-                 'outflow','Retinal fibers','anatomical','ocular segregation','Major','unique connections','neurophysin',
+                 'outflow','anatomical','ocular segregation','Major','unique connections','neurophysin',
                  'definitive evidence','synaptic transmission','possible sites','markers','differentially','laminar distribution',
-                 'previously described','division','higher-order','degradative','topographically','dividing','third','four','additional',
+                 'previously described','division','higher-order','topographically','dividing','third','four','additional',
                  'levels','stage','projections','link','plotter','ganglion cells','skeleton','ranging areas','monkey','horseshoe bats',
                  'dendrite','addition','distinct regions','fastest','nonreciprocal','monaural','unidentified','non-5-HT-containing','Direct',
                  'microiontophoretic','immunohistochemical','vertebrates','locations','system','7 also','migratory','extrinsic','fates',
                  'dendrites','Major intrinsic','mouse embryos','maturity','contrast','location','monkeys','retrograde labeling',
-                 'radioactivity','wider','carp','Autonomic responses','interposed','second','Feedback','pyramidal','monosynaptic',
+                 'radioactivity','wider','carp','interposed','second','Feedback','pyramidal','monosynaptic',
                  'olfactory axons','bear','horseshoe','index','thumb','mustached','population','branches','wallaby','cats','insect',
                  'trunk-tail branches','particular','lateral parts','barbel']
 
