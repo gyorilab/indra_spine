@@ -7,8 +7,10 @@ from collections import defaultdict
 from gilda.process import normalize
 from pyobo.gilda_utils import get_gilda_terms
 
+
+spine_file = '/Users/sangeethavempati/Documents/GitHub/reach/bioresources/src/main/resources/org/clulab/reach/kb/spine.tsv'
 #reformat terms
-df = pd.read_csv('spine.tsv', sep = '\t', header = None, names = ['name', 'id'])
+df = pd.read_csv(spine_file, sep='\t', header=None, names=['name', 'id'])
 #for each id, make a list of the corresponding brain regions
 id_to_names = defaultdict(list)
 for name,identifier in df.values:

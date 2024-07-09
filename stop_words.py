@@ -26,7 +26,7 @@ exclude_words = ['normal','eminence','diurnal','targets','red','several','one','
                  'parvalbumin','serotonergic','forelimb','pelvic visceral','agranular','antennae','asymmetry','larger','low-threshold',
                  'lineage','honeybees','nonspiking','laterality','Thin','GABAergic','6a beta','presumed','6a alpha','morphology',
                  'neurosecretory','Distribution','projects','example','turn','Synaptic','development','hypothesis','immunoreactive granule',
-                 'Taste','anterograde','tall','Morphology','line','cap','Area','vesicle','existing reports','distinct','similar',
+                 'Taste','anterograde','tall','Morphology','line','cap','vesicle','existing reports','distinct','similar',
                  'compartments','homotopic','populations','corresponding','axonal tracers','budgerigars','redial','retrograde','small',
                  'semicircular canal','group','shell','number','rotated','expression','marsupial','discrete','study','somatostatin',
                  'outflow','anatomical','ocular segregation','Major','unique connections','neurophysin',
@@ -38,5 +38,6 @@ exclude_words = ['normal','eminence','diurnal','targets','red','several','one','
                  'dendrites','Major intrinsic','mouse embryos','maturity','contrast','location','monkeys','retrograde labeling',
                  'radioactivity','wider','carp','interposed','second','Feedback','pyramidal','monosynaptic',
                  'olfactory axons','bear','horseshoe','index','thumb','mustached','population','branches','wallaby','cats','insect',
-                 'trunk-tail branches','particular','lateral parts','barbel']
+                 'trunk-tail branches','particular','lateral parts','barbel','gene','genes', 'larvae', 'kinase', 'peptides', 'circuits',
+                 'pathophysiological','brain', 'projection', 'medial', 'lateral', 'parietal', 'occipital']
 
