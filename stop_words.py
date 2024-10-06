@@ -39,5 +39,4 @@ exclude_words = ['normal','eminence','diurnal','targets','red','several','one','
                  'radioactivity','wider','carp','interposed','second','Feedback','pyramidal','monosynaptic',
                  'olfactory axons','bear','horseshoe','index','thumb','mustached','population','branches','wallaby','cats','insect',
                  'trunk-tail branches','particular','lateral parts','barbel','gene','genes', 'larvae', 'kinase', 'peptides', 'circuits',
-                 'pathophysiological','brain', 'projection', 'medial', 'lateral', 'parietal', 'occipital']
-
+                 'pathophysiological', 'chemoreceptor','basal', 'brain', '\'s disease']

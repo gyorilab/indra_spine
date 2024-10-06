@@ -1725,14 +1725,9 @@ area 8 of Brodmann-1909	UBERON:0013539
 area 8a of Brodmann-1909	UBERON:0013562
 area 9 of Brodmann	UBERON:0013540
 area 9 of Brodmann-1909	UBERON:0013540
-brain	UBERON:0000955
-brain anatomical structure	UBERON:0002616
 brain arachnoid mater	UBERON:0005397
 brain arachnoid matter	UBERON:0005397
-brain biological structure	UBERON:0002616
-brain blood vessel	UBERON:0003499
 brain box	UBERON:0001703
-brain commissure	UBERON:0005970
 brain coronal sulcus	UBERON:0013596
 brain dura mater	UBERON:0002092
 brain endothelium	UBERON:0013694
@@ -1746,8 +1741,6 @@ brain marginal zone	UBERON:0010403
 brain meninges	UBERON:0003547
 brain meninx	UBERON:0003547
 brain nucleus	UBERON:0002308
-brain of rodent	UBERON:0023939
-brain part	UBERON:0002616
 brain pia mater	UBERON:0003549
 brain pia mater of neuraxis	UBERON:0003549
 brain rudiment	UBERON:0006238
@@ -1755,7 +1748,6 @@ brain stem	UBERON:0002298
 brain stem reticular formation	UBERON:0002275
 brain stem/spinal tracts and commissures	UBERON:2000318
 brain subventricular zone	UBERON:0004922
-brain tract	UBERON:0007702
 brain vasculature	UBERON:0008998
 brain venous system	UBERON:0013146
 brain ventricle	UBERON:0004086
@@ -2309,15 +2301,9 @@ neoneural	UBERON:2001798
 neopallial cortex	UBERON:0001950
 neopallium	UBERON:0001950
 neostriatum	UBERON:0002435
-nerve	UBERON:0001021
-nerve bundle	UBERON:0001019
-nerve cord	UBERON:0005053
-nerve ending	UBERON:0012453
 nerve ending of of corpus cavernosum maxillaris	UBERON:0013671
 nerve fascicle of telencephalon	UBERON:0022248
 nerve fasciculus	UBERON:0001019
-nerve fiber	UBERON:0006134
-nerve fiber bundle	UBERON:0000122
 nerve fiber layer of retina	UBERON:0001793
 nerve fibre	UBERON:0006134
 nerve foramen	UBERON:4200105
@@ -2503,8 +2489,6 @@ nerve trunk of sympathetic nervous system	UBERON:0004295
 nerve trunk of sympathetic nervous system of thorax	UBERON:0004863
 nerve trunk of sympathetic part of autonomic division of nervous system	UBERON:0004295
 nerve trunk of sympathetic part of autonomic division of nervous system of thorax	UBERON:0004863
-nerves	UBERON:0001021
-nervous system	UBERON:0001016
 nervous system cell part layer	UBERON:0022303
 nervous system commissure	UBERON:0001020
 nervous system nucleus	UBERON:0000125
@@ -2545,7 +2529,6 @@ neural groove	UBERON:0005061
 neural keel	UBERON:0007135
 neural lamina	UBERON:2002008
 neural layer of retina	UBERON:0003902
-neural lobe	UBERON:0002198
 neural lobe of neurohypophysis	UBERON:0003217
 neural lobe of pituitary	UBERON:0002198
 neural lobe of pituitary gland	UBERON:0002198
@@ -5420,7 +5403,6 @@ cingulate cortex cingulum	UBERON:0022428
 cingulate neocortex	UBERON:0003027
 cingulum bundle in cingulate cortex	UBERON:0022428
 cingulum bundle in temporal cortex	UBERON:0022429
-cortex	UBERON:0001851
 cortex (glandula suprarenalis)	UBERON:0001235
 cortex of adrenal gland	UBERON:0001235
 cortex of cerebellar hemisphere	UBERON:0002129
@@ -5763,7 +5745,6 @@ frontal gyrus	UBERON:0015593
 fronto-orbital gyrus	UBERON:0009836
 fusiform gyrus	UBERON:0002766
 great transverse gyrus of Heschl	UBERON:0002773
-gyrus	UBERON:0000200
 gyrus ambiens (noback)	UBERON:0002724
 gyrus frontalis inferior, pars opercularis	UBERON:0002980
 gyrus frontalis inferior, pars orbitalis	UBERON:0002624
@@ -10695,10 +10676,6 @@ lateral septal complex	UBERON:0007628
 lateral zone of D	UBERON:0014741
 left sub-lobar region	UBERON:0024900
 leptomeninx	UBERON:0000391
-lobule	UBERON:0009911
-lobulus	UBERON:0009911
-lobus	UBERON:0009912
-lobe	UBERON:3010752
 macula	UBERON:0000054
 macula of utricle	UBERON:0002214
 macula of utriculus (labyrinthus vestibularis)	UBERON:0002214
@@ -10914,8 +10891,6 @@ preoccipital notch	UBERON:0002698
 primI	UBERON:2005115
 primary olfactory fiber layer	UBERON:2000267
 primitive superior sagittal sinus	UBERON:0009968
-projection	UBERON:0004529
-projections	UBERON:0004529
 proneural cluster	UBERON:2000068
 proneural clusters	UBERON:2000068
 pulminory lobe	UBERON:0000101
@@ -11011,3 +10986,29 @@ ventral midline	UBERON:0009571
 ventral zone	UBERON:2000707
 ventro-lateral marginal zone	UBERON:3010454
 vestibulolateralis lobe	UBERON:2000307
+caviness neocortex parcellation unit	FMA:71014
+brain	UBERON:0000955
+brain anatomical structure	UBERON:0002616
+brain biological structure	UBERON:0002616
+brain blood vessel	UBERON:0003499
+brain commissure	UBERON:0005970
+brain of rodent	UBERON:0023939
+brain part	UBERON:0002616
+brain tract	UBERON:0007702
+nerve	UBERON:0001021
+nerve bundle	UBERON:0001019
+nerve cord	UBERON:0005053
+nerve ending	UBERON:0012453
+nerve fiber	UBERON:0006134
+nerve fiber bundle	UBERON:0000122
+nerves	UBERON:0001021
+nervous system	UBERON:0001016
+neural lobe	UBERON:0002198
+cortex	UBERON:0001851
+gyrus	UBERON:0000200
+lobule	UBERON:0009911
+lobulus	UBERON:0009911
+lobus	UBERON:0009912
+lobe	UBERON:3010752
+projection	UBERON:0004529
+projections	UBERON:0004529

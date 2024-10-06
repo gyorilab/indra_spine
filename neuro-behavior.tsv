@@ -1,0 +1,1359 @@
+body part movement	NBO:0000001
+stationary	NBO:0000001
+whole body movement	NBO:0000002
+emotional behavior	NBO:0000003
+affective	NBO:0000003
+mood	NBO:0000003
+reflexive behavior phenotype	NBO:0000005
+pathological	NBO:0000005
+learning and/or memory behavior	NBO:0000006
+learning	NBO:0000006
+mouth movement	NBO:0000007
+mouth	NBO:0000007
+other	NBO:0000007
+rhythmic behavior	NBO:0000008
+locomotory behavior phenotype	NBO:0000009
+pathological	NBO:0000009
+reproductive behavior	NBO:0000010
+reproduction	NBO:0000010
+reproductive	NBO:0000010
+social behavior	NBO:0000011
+social	NBO:0000011
+seizures/epilepsy	NBO:0000012
+locomotory behavior	NBO:0000013
+locomotion	NBO:0000013
+mating behavior	NBO:0000014
+mating	NBO:0000014
+aggressive behavior	NBO:0000015
+aggression	NBO:0000015
+aggressive	NBO:0000015
+agonism	NBO:0000015
+jumping behavior	NBO:0000016
+jump	NBO:0000016
+biting	NBO:0000017
+bite	NBO:0000017
+fear/anxiety related behavior	NBO:0000018
+fear/anxiety	NBO:0000018
+licking	NBO:0000019
+lick	NBO:0000019
+head movement	NBO:0000020
+move	NBO:0000020
+learning behavior	NBO:0000022
+learning	NBO:0000022
+head shaking	NBO:0000023
+shake	NBO:0000023
+sleeping behavior	NBO:0000024
+seizures	NBO:0000025
+epileptic	NBO:0000025
+unprovoked	NBO:0000025
+head rotation	NBO:0000026
+rotate	NBO:0000026
+grooming behavior	NBO:0000027
+groom	NBO:0000027
+grooming	NBO:0000027
+hygiene	NBO:0000027
+akinesia	NBO:0000028
+bradykinesia	NBO:0000029
+hypokinesia	NBO:0000029
+hyperactivity	NBO:0000030
+hypoactivity	NBO:0000031
+paralysis	NBO:0000032
+carpoptosis	NBO:0000033
+sexual activity	NBO:0000034
+sexual	NBO:0000034
+emission behavior	NBO:0000035
+behavioral control of production of sound	NBO:0000036
+produce	NBO:0000036
+vocalization behavior	NBO:0000037
+vocalization	NBO:0000037
+vocalize	NBO:0000037
+behavioral control of excretion	NBO:0000038
+behavioral control of defecation	NBO:0000039
+behavioral control of urination	NBO:0000040
+micturition	NBO:0000040
+urinate	NBO:0000040
+behavioral control of external secretion	NBO:0000041
+secrete	NBO:0000041
+behavioral control of lacrimation	NBO:0000042
+tear	NBO:0000042
+tear	NBO:0000042
+bonding behavior	NBO:0000043
+forming	NBO:0000043
+parental behavior	NBO:0000044
+brooding behavior	NBO:0000045
+thermoregulation	NBO:0000045
+weaning behavior	NBO:0000047
+weaning	NBO:0000047
+protection of offspring behavior	NBO:0000048
+protection	NBO:0000048
+social play	NBO:0000049
+social	NBO:0000049
+thermoregulation behavior	NBO:0000051
+huddling behavior	NBO:0000052
+huddle	NBO:0000052
+basking behavior	NBO:0000053
+basking	NBO:0000053
+sunning	NBO:0000053
+sunning	NBO:0000053
+suckling behavior	NBO:0000054
+nursing	NBO:0000054
+suckling	NBO:0000054
+running behavior	NBO:0000055
+run	NBO:0000055
+walking behavior	NBO:0000056
+walking	NBO:0000056
+scratching	NBO:0000057
+scratch	NBO:0000057
+scratching	NBO:0000057
+nuzzling	NBO:0000059
+copulation	NBO:0000060
+copulate	NBO:0000060
+forelimb paralysis	NBO:0000061
+bathing behavior	NBO:0000062
+bathe	NBO:0000062
+bathing	NBO:0000062
+regulation of eating behavior	NBO:0000063
+eating	NBO:0000063
+regulation of drinking behavior	NBO:0000064
+drinking	NBO:0000064
+consciousness behavior	NBO:0000065
+wakefulness	NBO:0000066
+asleep	NBO:0000067
+shaking	NBO:0000068
+swaying	NBO:0000069
+tilting	NBO:0000070
+fossorial locomotion behavior	NBO:0000071
+burrowing	NBO:0000071
+burrowing	NBO:0000071
+chewing	NBO:0000073
+chew	NBO:0000073
+gnaw	NBO:0000073
+mastication	NBO:0000073
+yawning	NBO:0000074
+playing behavior	NBO:0000075
+play	NBO:0000075
+locomotor play	NBO:0000076
+exercise	NBO:0000076
+motor	NBO:0000076
+motor	NBO:0000076
+courtship behavior	NBO:0000077
+courtship	NBO:0000077
+courtship	NBO:0000077
+post-mating behavior	NBO:0000078
+post	NBO:0000078
+post-copulatory	NBO:0000078
+post-mating	NBO:0000078
+feeding behavior	NBO:0000079
+feeding	NBO:0000079
+sitting down	NBO:0000080
+sit	NBO:0000080
+standing up	NBO:0000081
+stand	NBO:0000081
+writhing	NBO:0000082
+writhe	NBO:0000082
+circadian behavior	NBO:0000084
+depression behavior	NBO:0000085
+depression	NBO:0000085
+novelty response behavior	NBO:0000086
+antipredation behavior	NBO:0000087
+antipredator	NBO:0000087
+acute stress response	NBO:0000088
+fight-or-flight	NBO:0000088
+fight-or-flight-or-freeze	NBO:0000088
+predator behavior	NBO:0000089
+predatory	NBO:0000089
+predatory	NBO:0000089
+threatening predator behavior	NBO:0000090
+threaten	NBO:0000090
+fear-related behavior	NBO:0000091
+fear-related	NBO:0000091
+anxiety-related behavior	NBO:0000092
+anxiety-related	NBO:0000092
+fear behavior towards objects	NBO:0000093
+fear behavior towards situation/environment	NBO:0000094
+fear behavior towards living things	NBO:0000095
+agoraphobia behavior	NBO:0000096
+response to novel environment	NBO:0000097
+response to novel object	NBO:0000098
+response to novel odor	NBO:0000099
+exploration behavior	NBO:0000100
+retropulsion	NBO:0000101
+fear-related retropulsion	NBO:0000102
+coping behavior	NBO:0000103
+aggressive behavior towards humans	NBO:0000104
+aggressive	NBO:0000104
+aggressive behavior towards animals	NBO:0000105
+aggressive	NBO:0000105
+aggressive behavior towards objects	NBO:0000106
+aggressive	NBO:0000106
+aggressive behavior towards mice	NBO:0000107
+aggressive	NBO:0000107
+aggressive behavior towards women	NBO:0000108
+aggressive	NBO:0000108
+aggressive behavior towards men	NBO:0000109
+aggressive	NBO:0000109
+aggressive behavior towards male mice	NBO:0000110
+aggressive	NBO:0000110
+aggressive behavior towards female mice	NBO:0000111
+aggressive	NBO:0000111
+aggressive behavior towards inanimate objects	NBO:0000112
+aggressive	NBO:0000112
+aggressive behavior towards animate objects	NBO:0000113
+aggressive	NBO:0000113
+aggressive behavior towards children	NBO:0000114
+aggressive	NBO:0000114
+aggressive behavior towards pups	NBO:0000115
+aggressive	NBO:0000115
+gender-related aggressive behavior	NBO:0000116
+gender-related	NBO:0000116
+aggressive behavior towards females	NBO:0000117
+aggressive behavior towards males	NBO:0000118
+aggressive	NBO:0000118
+impulsive behavior	NBO:0000119
+physical aggression behavior	NBO:0000120
+physical	NBO:0000120
+violent	NBO:0000120
+agonistic behavior	NBO:0000121
+agonism	NBO:0000121
+submissive behavior	NBO:0000122
+submissive	NBO:0000122
+submissive behavior towards males	NBO:0000123
+submissive	NBO:0000123
+submissive behavior towards females	NBO:0000124
+submissive	NBO:0000124
+submissive behavior towards male mice	NBO:0000125
+submissive	NBO:0000125
+subordination behavior	NBO:0000126
+retreat behavior	NBO:0000127
+retreat	NBO:0000127
+retreat	NBO:0000127
+irritability behavior	NBO:0000128
+agitation behavior	NBO:0000129
+liquid consumption	NBO:0000130
+alcohol consumption	NBO:0000131
+water consumption	NBO:0000132
+liquid preference/aversion	NBO:0000133
+food consumption	NBO:0000134
+food preference/aversion	NBO:0000135
+saccharin consumption	NBO:0000136
+liquid preference	NBO:0000137
+liquid aversion	NBO:0000138
+alcohol aversion	NBO:0000139
+alcohol preference	NBO:0000140
+food preference	NBO:0000141
+food aversion	NBO:0000142
+saccharin preference	NBO:0000143
+mating frequency	NBO:0000144
+mating preference	NBO:0000145
+mate	NBO:0000145
+mating receptivity	NBO:0000146
+sexual display behavior	NBO:0000147
+mate	NBO:0000147
+social investigation	NBO:0000148
+reclusive behavior	NBO:0000149
+maternal behavior	NBO:0000150
+paternal behavior	NBO:0000151
+maternal nurturing behavior	NBO:0000152
+paternal nurturing behavior	NBO:0000153
+maternal crouching	NBO:0000154
+offspring retrieval	NBO:0000155
+retrieval	NBO:0000155
+nesting behavior	NBO:0000156
+nest building behavior	NBO:0000157
+sleep pattern	NBO:0000158
+rapid eye movement sleep	NBO:0000159
+paradoxical	NBO:0000159
+REM	NBO:0000159
+sleep duration	NBO:0000160
+non-rapid eye movement sleep behavior	NBO:0000161
+NREM	NBO:0000161
+REM duration	NBO:0000162
+REM frequency	NBO:0000163
+NREM duration	NBO:0000164
+NREM frequency	NBO:0000165
+circadian rhythm	NBO:0000166
+circadian period	NBO:0000167
+circadian persistence	NBO:0000168
+circadian phase	NBO:0000169
+memory behavior	NBO:0000170
+memory	NBO:0000170
+associative learning behavior	NBO:0000171
+conditional	NBO:0000171
+olfactory learning behavior	NBO:0000172
+visual learning behavior	NBO:0000173
+motor learning	NBO:0000174
+spatial learning	NBO:0000175
+vocal learning	NBO:0000176
+non-associative learning	NBO:0000177
+nonassociative	NBO:0000177
+unconditional	NBO:0000177
+habituation	NBO:0000178
+sensitization	NBO:0000179
+short-term memory	NBO:0000180
+long-term memory	NBO:0000181
+sensory memory	NBO:0000182
+long-lasting memory	NBO:0000183
+medium term memory	NBO:0000184
+declarative memory	NBO:0000185
+explicit	NBO:0000185
+semantic memory	NBO:0000186
+episodic memory	NBO:0000187
+non-declarative memory	NBO:0000188
+implicit	NBO:0000188
+procedural	NBO:0000188
+motor memory	NBO:0000190
+muscle	NBO:0000190
+emotional memory	NBO:0000191
+prospective memory	NBO:0000192
+event-based prospective memory	NBO:0000193
+time-based prospective memory	NBO:0000194
+autobiographical memory	NBO:0000195
+visual memory	NBO:0000196
+iconic memory	NBO:0000197
+eidetic memory	NBO:0000198
+photographic	NBO:0000198
+topographic memory	NBO:0000199
+priming	NBO:0000200
+direct priming	NBO:0000201
+repetition	NBO:0000201
+semantic priming	NBO:0000202
+associative priming	NBO:0000203
+response priming	NBO:0000204
+conceptual priming	NBO:0000205
+perceptual priming	NBO:0000206
+sensory adaptation	NBO:0000207
+classical conditioning	NBO:0000208
+Pavlovian	NBO:0000208
+respondent	NBO:0000208
+fear conditioning	NBO:0000209
+avoidance learning behavior	NBO:0000210
+conditioned taste aversion	NBO:0000211
+Garcia	NBO:0000211
+operant conditioning behavior	NBO:0000212
+instrumental	NBO:0000212
+instrumental	NBO:0000212
+imprinting behavior	NBO:0000213
+latent learning behavior	NBO:0000214
+observational learning	NBO:0000215
+modeling	NBO:0000215
+vicarious	NBO:0000215
+language learning behavior	NBO:0000216
+active avoidance learning behavior	NBO:0000217
+passive avoidance learning behavior	NBO:0000218
+escape learning behavior	NBO:0000219
+social learning	NBO:0000220
+conditioned emotional response	NBO:0000221
+conditioned place preference behavior	NBO:0000222
+contextual conditioning behavior	NBO:0000223
+cued conditioning behavior	NBO:0000224
+perceptual constancy behavior	NBO:0000225
+spinal conditioning	NBO:0000226
+eye blink conditioning behavior	NBO:0000227
+jaw movement conditioning behavior	NBO:0000228
+vestibular behavior phenotype	NBO:0000229
+pathological	NBO:0000229
+pleasure behavior	NBO:0000230
+excitement behavior	NBO:0000231
+distress behavior	NBO:0000232
+motivation behavior	NBO:0000233
+behavioral	NBO:0000233
+maintenance	NBO:0000233
+perception	NBO:0000233
+thirst motivation behavior	NBO:0000234
+hunger motivation behavior	NBO:0000235
+appetite	NBO:0000235
+sexual motivation behavior	NBO:0000236
+hunger regulation	NBO:0000237
+short term hunger regulation	NBO:0000238
+long term hunger regulation	NBO:0000239
+anorexia nervosa	NBO:0000240
+bulimia nervosa	NBO:0000241
+obesity	NBO:0000242
+behavioral phenotype	NBO:0000243
+pathological anxiety	NBO:0000244
+hysteria	NBO:0000244
+pathological	NBO:0000244
+generalized anxiety	NBO:0000245
+GAD	NBO:0000245
+phobia	NBO:0000246
+phobic	NBO:0000246
+panic	NBO:0000247
+obsessive-compulsive disorder	NBO:0000248
+OCD	NBO:0000248
+somatoform behavior phenotype	NBO:0000249
+pathological	NBO:0000249
+conversion disorder	NBO:0000250
+hysteria	NBO:0000250
+hypochondriasis	NBO:0000251
+health	NBO:0000251
+health	NBO:0000251
+hypochondria	NBO:0000251
+dissociative disorders	NBO:0000252
+dissociative amnesia	NBO:0000253
+dissociative fugue	NBO:0000254
+dissociative identity disorder	NBO:0000255
+mood disorder	NBO:0000256
+major depressive disorder	NBO:0000257
+clinical	NBO:0000257
+major	NBO:0000257
+MDD	NBO:0000257
+unipolar	NBO:0000257
+bipolar disorder	NBO:0000258
+BD	NBO:0000258
+bipolar	NBO:0000258
+manic	NBO:0000258
+psychotic disorder	NBO:0000259
+paranoid schizophrenia	NBO:0000260
+catatonic schizophrenia	NBO:0000261
+disorganized (hebephrenic) schizophrenia	NBO:0000262
+undifferentiated schizophrenia	NBO:0000263
+residual schizophrenia	NBO:0000264
+personality disorder	NBO:0000265
+cognitive behavior phenotype	NBO:0000266
+delirium	NBO:0000267
+dementia	NBO:0000268
+amnestic disorder	NBO:0000269
+feeding behavior phenotype	NBO:0000270
+group behavior	NBO:0000271
+group	NBO:0000271
+social facilitation	NBO:0000272
+social interference	NBO:0000273
+social	NBO:0000273
+group polarization	NBO:0000274
+groupthink	NBO:0000275
+vocal aggression behavior	NBO:0000276
+verbal	NBO:0000276
+discriminatory behavior	NBO:0000277
+<new	NBO:0000277
+discrimination	NBO:0000277
+prejudice	NBO:0000277
+gender specific discriminatory behavior	NBO:0000278
+sexism	NBO:0000278
+age specific discriminatory behavior	NBO:0000279
+ageism	NBO:0000279
+attraction-related behavior	NBO:0000280
+affiliation	NBO:0000281
+liking	NBO:0000282
+friendship	NBO:0000283
+love	NBO:0000284
+altruism behavior	NBO:0000285
+prosocial behavior	NBO:0000286
+helping behavior	NBO:0000287
+reciprocal altruism	NBO:0000288
+social influence related behavior	NBO:0000289
+conformity	NBO:0000290
+obedience to authority	NBO:0000291
+bystander intervention	NBO:0000292
+behavior stemming from intelligence	NBO:0000293
+behavior stemming from emotional intelligence	NBO:0000294
+satiation	NBO:0000295
+conciliation behavior	NBO:0000296
+reconciliation	NBO:0000296
+reconciliation	NBO:0000296
+behavior stemming from problem solving	NBO:0000297
+behavior stemming from communication intelligence	NBO:0000298
+alloparental behavior	NBO:0000299
+male aggressive behavior	NBO:0000300
+male	NBO:0000300
+female aggressive behavior	NBO:0000301
+female	NBO:0000301
+maternal aggressive behavior	NBO:0000302
+maternal	NBO:0000302
+paternal aggressive behavior	NBO:0000303
+paternal	NBO:0000303
+memory loss behavior	NBO:0000304
+forgetting	NBO:0000304
+memory encoding behavior	NBO:0000305
+memory storage behavior	NBO:0000306
+memory	NBO:0000306
+memory retrieval behavior	NBO:0000307
+memory	NBO:0000307
+sensation behavior	NBO:0000308
+behavior	NBO:0000308
+perception	NBO:0000308
+social phobia	NBO:0000309
+acrophobia	NBO:0000310
+sleep motivation behavior	NBO:0000311
+sleep	NBO:0000311
+regulation of sleep	NBO:0000312
+behavior process	NBO:0000313
+behavior	NBO:0000313
+behaviour	NBO:0000313
+visual behavior	NBO:0000314
+behavioral	NBO:0000314
+behavioural	NBO:0000314
+visual	NBO:0000314
+optokinetic behavior	NBO:0000315
+auditory behavior	NBO:0000316
+hearing	NBO:0000316
+vestibular behavior	NBO:0000317
+proprioception	NBO:0000317
+balance	NBO:0000318
+body rotation sensation behavior	NBO:0000319
+gravitation sensation behavior	NBO:0000320
+movement sensation behavior	NBO:0000321
+chemosensory behavior	NBO:0000322
+olfactory behavior	NBO:0000323
+taste behavior	NBO:0000324
+gustatory	NBO:0000324
+thermosensory behavior	NBO:0000326
+thermosensation	NBO:0000326
+somatic sensation related behavior	NBO:0000327
+hot sensation behavior	NBO:0000328
+cold sensation behavior	NBO:0000329
+cutaneous sensation behavior	NBO:0000330
+nociceptive behavior	NBO:0000331
+nociception	NBO:0000331
+pain	NBO:0000331
+touch related behavior	NBO:0000332
+chemical nociceptive behavior	NBO:0000333
+chemical	NBO:0000333
+mechanical nociceptive behavior	NBO:0000334
+mechanical	NBO:0000334
+thermal nociceptive behavior	NBO:0000335
+thermal	NBO:0000335
+chemically-elicited antinociceptive behavior	NBO:0000336
+chemically-elicited	NBO:0000336
+pressure related behavior	NBO:0000337
+kinesthetic behavior	NBO:0000338
+motor coordination	NBO:0000339
+eye-hand coordination	NBO:0000341
+hand	NBO:0000341
+limb coordination	NBO:0000342
+intralimb coordination	NBO:0000343
+intra-limb	NBO:0000343
+interlimb coordination	NBO:0000344
+inter-limb	NBO:0000344
+lower limb coordination	NBO:0000345
+upper limb coordination	NBO:0000346
+gross motor coordination	NBO:0000347
+large	NBO:0000347
+whole	NBO:0000347
+fine motor coordination	NBO:0000348
+manual dexterity	NBO:0000349
+graphomotor coordination	NBO:0000350
+body coordination	NBO:0000351
+upper body coordination	NBO:0000352
+lower body coordination	NBO:0000353
+bilateral coordination	NBO:0000354
+posture	NBO:0000355
+body posture	NBO:0000356
+limb posture	NBO:0000357
+resting posture	NBO:0000358
+terrestrial locomotory behavior	NBO:0000359
+leaping behavior	NBO:0000360
+saltation	NBO:0000360
+gait	NBO:0000361
+stride	NBO:0000362
+crawling behavior	NBO:0000363
+crawl	NBO:0000363
+arboreal locomotion behavior	NBO:0000364
+brachiation	NBO:0000365
+aerial locomotion behavior	NBO:0000366
+flight behavior	NBO:0000367
+fly	NBO:0000367
+flying	NBO:0000367
+climbing behavior	NBO:0000368
+gliding behavior	NBO:0000369
+saltation	NBO:0000370
+hopping	NBO:0000370
+aquatic locomotion	NBO:0000371
+swim	NBO:0000371
+swimming	NBO:0000371
+directional control of locomotion	NBO:0000372
+locomotory orientation behavior	NBO:0000373
+kinesis	NBO:0000374
+taxis	NBO:0000375
+steering behavior	NBO:0000376
+chemotactic behavior	NBO:0000377
+chemotaxis	NBO:0000377
+gravitactic behavior	NBO:0000378
+geotactic	NBO:0000378
+gravitaxis	NBO:0000378
+negative gravitactic behavior	NBO:0000379
+negative	NBO:0000379
+negative	NBO:0000379
+positive gravitactic behavior	NBO:0000380
+positive	NBO:0000380
+positive	NBO:0000380
+thigmotaxis	NBO:0000381
+stereotaxis	NBO:0000381
+energy taxis	NBO:0000382
+phototactic behavior	NBO:0000383
+phototaxis	NBO:0000383
+thermotaxis	NBO:0000384
+phonotaxis	NBO:0000385
+mechanical stimulus taxis	NBO:0000386
+barotaxis	NBO:0000387
+involuntary movement behavior	NBO:0000388
+reflexive behavior	NBO:0000389
+reflex	NBO:0000389
+primitive reflex	NBO:0000390
+infant	NBO:0000390
+infantile	NBO:0000390
+newborn	NBO:0000390
+startle reflex	NBO:0000391
+alarm	NBO:0000391
+tonic labyrinthine reflex	NBO:0000392
+TLR	NBO:0000392
+asymmetrical tonic neck reflex	NBO:0000393
+ATNR	NBO:0000393
+fencing	NBO:0000393
+symmetrical tonic neck reflex	NBO:0000394
+galant reflex	NBO:0000395
+spinal	NBO:0000395
+babkin reflex	NBO:0000396
+swimming reflex	NBO:0000397
+plantar reflex	NBO:0000398
+palmar grasp reflex	NBO:0000399
+rooting reflex	NBO:0000400
+sucking reflex	NBO:0000401
+walking reflex	NBO:0000402
+stepping	NBO:0000402
+voluntary movement behavior	NBO:0000403
+stretch reflex	NBO:0000404
+deep	NBO:0000404
+biceps reflex	NBO:0000405
+brachioradialis reflex	NBO:0000406
+supinator	NBO:0000406
+extensor digitorum reflex	NBO:0000407
+BER	NBO:0000407
+Braunecker-Effenberg	NBO:0000407
+triceps reflex	NBO:0000408
+patellar reflex	NBO:0000409
+knee-jerk	NBO:0000409
+ankle jerk reflex	NBO:0000410
+Achilles	NBO:0000410
+Achilles	NBO:0000410
+ankle	NBO:0000410
+triceps	NBO:0000410
+cranial nerve related reflex	NBO:0000411
+pupillary light reflex	NBO:0000412
+pupillary	NBO:0000412
+accommodation reflex	NBO:0000413
+jaw jerk reflex	NBO:0000414
+masseter	NBO:0000414
+corneal reflex	NBO:0000415
+blink	NBO:0000415
+blinking	NBO:0000415
+vestibulo-ocular reflex	NBO:0000416
+oculovestibular	NBO:0000416
+vestibuloocular	NBO:0000416
+VOR	NBO:0000416
+physiologic nystagmus	NBO:0000417
+pharyngeal reflex	NBO:0000418
+gag	NBO:0000418
+swallowing	NBO:0000418
+sleeping behavior phenotype	NBO:0000419
+bruxism	NBO:0000420
+<new	NBO:0000420
+teeth	NBO:0000420
+delayed sleep phase syndrome	NBO:0000421
+delayed	NBO:0000421
+delayed	NBO:0000421
+DSPS	NBO:0000421
+insomnia	NBO:0000422
+narcolepsy	NBO:0000423
+sleep terror	NBO:0000424
+night	NBO:0000424
+Pavor	NBO:0000424
+abdominal reflex	NBO:0000425
+anocutaneous reflex	NBO:0000426
+anal	NBO:0000426
+anal	NBO:0000426
+perineal	NBO:0000426
+cremasteric reflex	NBO:0000427
+mammalian diving reflex	NBO:0000428
+visceromotor reflex	NBO:0000429
+muscular defense	NBO:0000430
+scratch reflex	NBO:0000431
+self-scratching	NBO:0000431
+acoustic startle reflex	NBO:0000432
+withdrawal reflex	NBO:0000433
+flexor	NBO:0000433
+nociceptive	NBO:0000433
+crossed extensor reflex	NBO:0000434
+acoustic reflex	NBO:0000435
+attenuation	NBO:0000435
+auditory	NBO:0000435
+stapedius	NBO:0000435
+arthrokinetic reflex	NBO:0000436
+cough reflex	NBO:0000437
+snout reflex	NBO:0000438
+glabellar reflex	NBO:0000439
+glabellar	NBO:0000439
+Golgi tendon reflex	NBO:0000440
+inverse	NBO:0000440
+shivering reflex	NBO:0000441
+sternutation	NBO:0000442
+sneeze	NBO:0000442
+sneezing	NBO:0000442
+vagovagal reflex	NBO:0000443
+eye movement	NBO:0000444
+tail movement	NBO:0000445
+visual pursuit	NBO:0000446
+locomotor activation behavior	NBO:0000447
+vertical activity	NBO:0000448
+spontaneous movement behavior	NBO:0000449
+social grooming	NBO:0000450
+allo-hygiene	NBO:0000450
+allogrooming	NBO:0000450
+allohygiene	NBO:0000450
+personal grooming	NBO:0000451
+auto-grooming	NBO:0000451
+autohygiene	NBO:0000451
+preening	NBO:0000451
+self-grooming	NBO:0000451
+awareness	NBO:0000452
+obsolete behavior related to feelings experiencing	NBO:0000453
+attention behavior	NBO:0000455
+focused attention behavior	NBO:0000456
+selective attention behavior	NBO:0000457
+alternating attention behavior	NBO:0000458
+sustained attention behavior	NBO:0000459
+vigilance	NBO:0000459
+divided attention behavior	NBO:0000460
+size constancy behavior	NBO:0000461
+colour constancy behavior	NBO:0000462
+shape constancy behavior	NBO:0000463
+perception of motion behavior	NBO:0000464
+form perception behavior	NBO:0000465
+depth perception behavior	NBO:0000466
+distance perception behavior	NBO:0000467
+perceptual illusion behavior	NBO:0000468
+stress related behavior	NBO:0000469
+behavioral alarm	NBO:0000470
+predator avoidance behavior	NBO:0000471
+behavioral exhaustion	NBO:0000472
+rhythmic behavior phenotype	NBO:0000473
+circadian behavior phenotype	NBO:0000474
+pathological	NBO:0000474
+dyssomnia	NBO:0000475
+intrinsic sleep disorder	NBO:0000476
+hypersomnia	NBO:0000477
+periodic limb movement disorder	NBO:0000478
+nocturnal	NBO:0000478
+PLMD	NBO:0000478
+restless legs syndrome	NBO:0000479
+RLS	NBO:0000479
+Wittmaack	NBO:0000479
+sleep apnea	NBO:0000480
+sleep	NBO:0000480
+sleep state misperception	NBO:0000481
+paradoxical	NBO:0000481
+pseudo-insomnia	NBO:0000481
+sleep	NBO:0000481
+SSM	NBO:0000481
+subjective	NBO:0000481
+subjective	NBO:0000481
+extrinsic sleep disorder	NBO:0000482
+alcohol-dependent sleep disorder	NBO:0000483
+food allergy insomnia	NBO:0000484
+circadian rhythm sleep disorder	NBO:0000485
+extrinsic circadian rhythm sleep disorder	NBO:0000486
+intrinsic circadian rhythm sleep disorder	NBO:0000487
+jet lag	NBO:0000488
+shift work sleep disorder	NBO:0000489
+SWSD	NBO:0000489
+advanced sleep phase syndrome	NBO:0000490
+advanced	NBO:0000490
+ASPS	NBO:0000490
+ASPT	NBO:0000490
+non-24-hour sleep-wake syndrome	NBO:0000491
+circadian	NBO:0000491
+circadian	NBO:0000491
+free	NBO:0000491
+hypernychthemeral	NBO:0000491
+non-24	NBO:0000491
+non-24-hour	NBO:0000491
+non-24-hour	NBO:0000491
+irregular sleep-wake rhythm	NBO:0000492
+parasomnia	NBO:0000493
+sleep breathing disorder	NBO:0000494
+SBD	NBO:0000494
+snoring	NBO:0000495
+upper airway resistance syndrome	NBO:0000496
+recurrent hypersomnia	NBO:0000497
+posttraumatic hypersomnia	NBO:0000498
+NREM parasomnia	NBO:0000499
+sleepwalking	NBO:0000500
+somnambulism	NBO:0000500
+nocturnal enuresis	NBO:0000501
+bedwetting	NBO:0000501
+somniloquy	NBO:0000502
+sleep-talking	NBO:0000502
+REM sleep behavior disorder	NBO:0000503
+RBD	NBO:0000503
+REM parasomnia	NBO:0000504
+acute RBD	NBO:0000505
+chronic RBD	NBO:0000506
+catathrenia	NBO:0000507
+recurrent isolated sleep paralysis	NBO:0000508
+RISP	NBO:0000508
+isolated sleep paralysis	NBO:0000509
+ISP	NBO:0000509
+sleep paralysis	NBO:0000510
+hypnagogic sleep paralysis	NBO:0000511
+predormital	NBO:0000511
+hypnopompic sleep paralysis	NBO:0000512
+postdormital	NBO:0000512
+climbing stairs	NBO:0000513
+hypnophobia	NBO:0000514
+somniphobia	NBO:0000514
+depressive disorder	NBO:0000515
+DD-NOS	NBO:0000515
+depressive	NBO:0000515
+atypical depression	NBO:0000516
+AD	NBO:0000516
+melancholic depression	NBO:0000517
+psychotic major depression	NBO:0000518
+PMD	NBO:0000518
+catatonic depression	NBO:0000519
+postpartum depression	NBO:0000520
+PDD	NBO:0000520
+postnatal	NBO:0000520
+seasonal affective disorder	NBO:0000521
+winter	NBO:0000521
+winter	NBO:0000521
+dysthymia	NBO:0000522
+recurrent brief depression	NBO:0000524
+RBD	NBO:0000524
+minor depressive disorder	NBO:0000525
+minor	NBO:0000525
+bipolar I	NBO:0000526
+bipolar II	NBO:0000527
+cyclothymia	NBO:0000528
+bipolar disorder not otherwise specified	NBO:0000529
+BD-NOS	NBO:0000529
+substance induced mood disorder	NBO:0000530
+alcohol induced mood disorder	NBO:0000531
+benzodiazepine induced mood disorder	NBO:0000532
+Interferon-alpha induced mood disorder	NBO:0000533
+post-traumatic stress	NBO:0000534
+post-traumatic	NBO:0000534
+PTSD	NBO:0000534
+separation anxiety	NBO:0000535
+SepAD	NBO:0000535
+circadian regulation of heart rate	NBO:0000536
+circadian regulation of systemic arterial blood pressure	NBO:0000537
+circadian temperature homeostasis	NBO:0000538
+circadian	NBO:0000538
+eating behavior phenotype	NBO:0000539
+eating	NBO:0000539
+drinking behavior phenotype	NBO:0000540
+drinking	NBO:0000540
+pathological	NBO:0000540
+dipsosis	NBO:0000541
+polydipsia	NBO:0000542
+hyperdipsia	NBO:0000543
+aphagia	NBO:0000544
+swallowing	NBO:0000545
+swallow	NBO:0000545
+polyphagia	NBO:0000546
+hyperphagia	NBO:0000546
+anhedonia	NBO:0000547
+male sexual activity	NBO:0000548
+female sexual activity	NBO:0000549
+recognition memory	NBO:0000550
+visual object recognition	NBO:0000551
+long term object recognition memory	NBO:0000552
+short term object recognition memory	NBO:0000553
+visual short term memory	NBO:0000554
+spatial working memory	NBO:0000555
+spatial memory	NBO:0000556
+short term spatial memory	NBO:0000557
+long term spatial memory	NBO:0000558
+maternal grooming	NBO:0000559
+barbering behavior	NBO:0000560
+hetero-barbering	NBO:0000561
+whisker	NBO:0000561
+self-barbering	NBO:0000562
+catalepsy	NBO:0000563
+social behavior phenotype	NBO:0000564
+pathological	NBO:0000564
+social withdrawal	NBO:0000565
+social withdrawal in childhood	NBO:0000566
+stereotypic behavior	NBO:0000567
+stereotypic	NBO:0000567
+stereotypy	NBO:0000567
+kinesthetic behavior phenotype	NBO:0000568
+fatigue	NBO:0000569
+head bobbing	NBO:0000570
+head	NBO:0000570
+nod	NBO:0000570
+multidirectional head movement	NBO:0000571
+senility	NBO:0000572
+behavioral despair	NBO:0000573
+optokinetic reflex	NBO:0000574
+pilomotor reflex	NBO:0000575
+horripilation	NBO:0000575
+piloerection	NBO:0000575
+pinna reflex	NBO:0000576
+Preyer's	NBO:0000576
+postural reflex	NBO:0000577
+righting reflex	NBO:0000578
+righting	NBO:0000578
+hyperekplexia	NBO:0000579
+tonic neck reflex	NBO:0000580
+cervicospinal	NBO:0000580
+TNR	NBO:0000580
+vestibulocollic reflex	NBO:0000581
+VCR	NBO:0000581
+vestibulospinal reflex	NBO:0000582
+vibrissae reflex	NBO:0000583
+vibrissa	NBO:0000583
+clutching reflex	NBO:0000584
+hindlimb	NBO:0000584
+limb	NBO:0000584
+limb	NBO:0000584
+emprosthotonos	NBO:0000585
+opisthotonus	NBO:0000586
+tetanic spasm	NBO:0000587
+spasm	NBO:0000588
+tremor	NBO:0000589
+quivering	NBO:0000589
+shivering	NBO:0000589
+trembling	NBO:0000589
+ataxia	NBO:0000590
+motor coordination phenotype	NBO:0000591
+dysmetria	NBO:0000592
+hypermetria	NBO:0000593
+hypometria	NBO:0000594
+posture phenotype	NBO:0000595
+titubation	NBO:0000596
+hindlimb paralysis	NBO:0000597
+dystonia	NBO:0000598
+long-term spatial memory	NBO:0000599
+psychomotor agitation behavior	NBO:0000600
+emotional behavior phenotype	NBO:0000601
+apathy	NBO:0000602
+impassivity	NBO:0000602
+perfunctoriness	NBO:0000602
+delusion	NBO:0000603
+social inhibition	NBO:0000604
+sexual inhibition	NBO:0000605
+forgetfulness	NBO:0000606
+pathological	NBO:0000606
+retention	NBO:0000606
+cognitive behavior	NBO:0000607
+hallucination	NBO:0000608
+visual hallucination	NBO:0000609
+paracusia	NBO:0000609
+auditory hallucination	NBO:0000610
+olfactory hallucination	NBO:0000611
+phantosmia	NBO:0000611
+communication behavior	NBO:0000612
+communicating	NBO:0000612
+signal	NBO:0000612
+nonverbal communication behavior	NBO:0000613
+non-verbal	NBO:0000613
+nonverbal	NBO:0000613
+visual communication behavior	NBO:0000614
+oral communication behavior	NBO:0000615
+eye contact	NBO:0000616
+laughing behavior	NBO:0000617
+crying behavior	NBO:0000618
+crying	NBO:0000618
+behavior stemming from insight	NBO:0000619
+frustration behavior	NBO:0000620
+selective mutism	NBO:0000621
+stereotypic motor behavior	NBO:0000622
+echolalia	NBO:0000623
+object play	NBO:0000624
+sexual play	NBO:0000626
+love	NBO:0000626
+play fight	NBO:0000627
+play chasing	NBO:0000628
+nursing play	NBO:0000629
+imitative play	NBO:0000630
+mobbing behavior	NBO:0000631
+mobbing	NBO:0000631
+mobbing calling	NBO:0000632
+territorial aggressive behavior	NBO:0000633
+territorial	NBO:0000633
+territorial	NBO:0000633
+irritable aggressive behavior	NBO:0000634
+avoidance behavior	NBO:0000635
+protective behavior	NBO:0000636
+defense	NBO:0000636
+defensive	NBO:0000636
+male courtship behavior	NBO:0000637
+male	NBO:0000637
+female courtship behavior	NBO:0000638
+female	NBO:0000638
+long term thirst regulation	NBO:0000639
+short term thirst regulation	NBO:0000640
+discrimination learning	NBO:0000641
+epilepsy	NBO:0000642
+unprovoked	NBO:0000642
+involuntary movement behavior phenotype	NBO:0000643
+voluntary movement behavior phenotype	NBO:0000644
+convulsion	NBO:0000645
+fit	NBO:0000645
+partial seizure	NBO:0000646
+focal	NBO:0000646
+localized	NBO:0000646
+simple partial seizure	NBO:0000647
+complex partial seizure	NBO:0000648
+psychomotor	NBO:0000648
+temporal	NBO:0000648
+being conscious	NBO:0000649
+temporal lobe epilepsy	NBO:0000650
+psychomotor	NBO:0000650
+simple partial seizure with motor signs	NBO:0000651
+focal	NBO:0000651
+motor	NBO:0000651
+simple partial seizure with sensory symptoms	NBO:0000652
+Jacksonian	NBO:0000652
+sensory	NBO:0000652
+simple partial seizure with autonomic symptoms or signs	NBO:0000653
+abdominal	NBO:0000653
+autonomic	NBO:0000653
+simple partial seizure with psychic symptoms	NBO:0000654
+psychic	NBO:0000654
+simple	NBO:0000654
+temporal	NBO:0000654
+sensation behavior phenotype	NBO:0000655
+somatic sensation related behavior phenotype	NBO:0000656
+cutaneous sensation behavior phenotype	NBO:0000657
+auditory behavior phenotype	NBO:0000658
+visual behavior phenotype	NBO:0000659
+chemosensory behavior phenotype	NBO:0000660
+olfactory behavior phenotype	NBO:0000661
+generalized seizure	NBO:0000662
+primarily	NBO:0000662
+partial seizure evolving to secondarily generalized seizure	NBO:0000663
+simple partial seizure evolving to generalized seizure	NBO:0000664
+complex partial seizure evolving to generalized seizure	NBO:0000665
+simple partial seizure evolving to complex partial seizure evolving to generalized seizure	NBO:0000666
+simple partial onset, followed by impairment of consciousness	NBO:0000667
+with impairment of consciousness at onset	NBO:0000668
+absence seizures	NBO:0000669
+petit	NBO:0000669
+atonic seizure	NBO:0000670
+akinetic	NBO:0000670
+drop	NBO:0000670
+drop	NBO:0000670
+myoclonic seizure	NBO:0000671
+myoclonus	NBO:0000671
+clonic seizure	NBO:0000672
+juvenile myoclonic epilepsy	NBO:0000673
+Janz	NBO:0000673
+Lennox-Gastaut syndrome	NBO:0000674
+reflex seizure	NBO:0000675
+environmental	NBO:0000675
+reflex	NBO:0000675
+tonic clonic seizure	NBO:0000676
+gran	NBO:0000676
+grand	NBO:0000676
+tonic seizure	NBO:0000677
+febrile seizure	NBO:0000678
+febrile	NBO:0000678
+fever	NBO:0000678
+simple febrile seizure	NBO:0000679
+complex febrile seizure	NBO:0000680
+benign rolandic epilepsy	NBO:0000681
+benign	NBO:0000681
+medial temporal lobe epilepsy	NBO:0000682
+MTLE	NBO:0000682
+lateral temporal lobe epilepsy	NBO:0000683
+LTLE	NBO:0000683
+childhood absence epilepsy	NBO:0000684
+pyknolepsy	NBO:0000684
+continuous seizure	NBO:0000685
+provoked seizure	NBO:0000686
+non-epileptic	NBO:0000686
+psychogenic non-epileptic seizure	NBO:0000687
+non-epileptic	NBO:0000687
+PNES	NBO:0000687
+myoclonic epilepsy	NBO:0000688
+progressive myoclonic epilepsy	NBO:0000689
+status epilepticus	NBO:0000690
+non-convulsive status epilepticus	NBO:0000691
+generalised convulsive status epilepticus	NBO:0000692
+complex partial status epilepticus	NBO:0000693
+absence status epilepticus	NBO:0000694
+subtle status epilepticus	NBO:0000695
+simple partial status epilepticus	NBO:0000696
+frontal lobe epilepsy	NBO:0000697
+nocturnal epilepsy	NBO:0000698
+photosensitive seizure	NBO:0000699
+photosensitive	NBO:0000699
+audiogenic seizure	NBO:0000700
+auditory	NBO:0000700
+typical absence seizure	NBO:0000701
+atypical absence seizure	NBO:0000702
+secondary generalized seizure	NBO:0000703
+rapid secondary generalization	NBO:0000704
+automatism	NBO:0000705
+oral automatism	NBO:0000706
+gestural automatism	NBO:0000707
+complex motor automatism	NBO:0000708
+drug induced seizure	NBO:0000709
+drug overdose induced seizure	NBO:0000710
+drug withdrawal induced seizure	NBO:0000711
+hypoglycemia induced seizure	NBO:0000712
+cocaine overdose induced seizure	NBO:0000713
+isoniazide overdose induced seizure	NBO:0000714
+amphetamine overdose induced seizure	NBO:0000715
+antidepressant overdose induced seizure	NBO:0000716
+theophylline overdose induced seizure	NBO:0000717
+penicillin overdose induced seizure	NBO:0000718
+alcohol withdrawal induced seizure	NBO:0000719
+benzodiazepine withdrawal induced seizure	NBO:0000720
+barbiturates withdrawal induced seizure	NBO:0000721
+heroin withdrawal induced seizure	NBO:0000722
+hypomagnesemia induced seizure	NBO:0000723
+electrical stimulation induced seizure	NBO:0000724
+trauma induced seizure	NBO:0000726
+kindling induced seizure	NBO:0000727
+electrical kindling induced seizure	NBO:0000728
+chemical kindling induced seizure	NBO:0000729
+auditory kindling induced seizure	NBO:0000730
+hemiclonic seizure	NBO:0000731
+unilateral	NBO:0000731
+left side clonic seizure	NBO:0000732
+right side clonic seizure	NBO:0000733
+infantile spasm	NBO:0000734
+Generalized	NBO:0000734
+Infantile	NBO:0000734
+Infantile	NBO:0000734
+jackknife	NBO:0000734
+Massive	NBO:0000734
+Salaam	NBO:0000734
+West	NBO:0000734
+hypocalcemia induced seizure	NBO:0000735
+secondary generalized tonic clonic seizure	NBO:0000736
+photostimulation induced seizure	NBO:0000737
+gelastic epilepsy	NBO:0000738
+gelastic	NBO:0000738
+dacrystic epilepsy	NBO:0000739
+dacrystic	NBO:0000739
+aggressive behavior by intent	NBO:0000740
+aggressive behavior by means	NBO:0000741
+autoaggressive behavior	NBO:0000742
+social aggression behavior	NBO:0000743
+perception behavior phenotype	NBO:0000744
+language communication behavior	NBO:0000745
+spatial perception	NBO:0000746
+jaw movement	NBO:0000747
+tongue movement	NBO:0000748
+blinking	NBO:0000749
+eyelid movement	NBO:0000750
+perception behavior by means	NBO:0000751
+electrical nociceptive behavior	NBO:0000752
+non-rapid eye movement sleep behavior phenotype	NBO:0000753
+rapid eye movement sleep phenotype	NBO:0000754
+reproductive behavior phenotype	NBO:0000755
+mating behavior phenotype	NBO:0000756
+post-mating behavior phenotype	NBO:0000757
+sexual activity phenotype	NBO:0000758
+courtship behavior phenotype	NBO:0000759
+female courtship behavior phenotype	NBO:0000760
+male courtship behavior phenotype	NBO:0000761
+copulation phenotype	NBO:0000762
+female sexual activity phenotype	NBO:0000763
+male sexual activity phenotype	NBO:0000764
+learning and/or memory behavior phenotype	NBO:0000765
+learning behavior phenotype	NBO:0000766
+memory behavior phenotype	NBO:0000767
+emission behavior phenotype	NBO:0000768
+behavioral control of excretion phenotype	NBO:0000769
+behavioral control of defecation phenotype	NBO:0000770
+behavioral control of urination phenotype	NBO:0000771
+behavioral control of production of sound phenotype	NBO:0000772
+behavioral control of external secretion phenotype	NBO:0000773
+behavioral control of lacrimation phenotype	NBO:0000774
+crying behavior phenotype	NBO:0000775
+mobbing calling phenotype	NBO:0000776
+vocalization behavior phenotype	NBO:0000777
+emotional conditioning	NBO:0000778
+increased amount of liquid in a single drinking act	NBO:0000851
+increased amount of liquid in drinking regulation	NBO:0000886
+frequency of drinking	NBO:0000929
+increased frequency of drinking	NBO:0000961
+decreased frequency of drinking	NBO:0000993
+behavioral response to radiation	NBO:0001536
+behavioral response to light	NBO:0001571
+behavioral response to chemical stimulus	NBO:0001632
+behavioral response to xenobiotics	NBO:0001679
+behavioral response to addictive substance	NBO:0001728
+behavioral response to alcohol	NBO:0001763
+regulation of behavior	NBO:0001786
+regulation of alcohol consumption	NBO:0001824
+consumption behavior	NBO:0001845
+ingest	NBO:0001845
+consumption of an addictive substance	NBO:0001884
+cocaine consumption	NBO:0001915
+morphine consumption	NBO:0001952
+behavioral response to cocaine	NBO:0001987
+behavioral response to morphine	NBO:0002021
+behavioral response to nicotine	NBO:0002065
+nicotine consumption	NBO:0002086
+regulation of cocaine consumption	NBO:0002132
+regulation of consumption behavior	NBO:0002169
+regulation of consumption of an addictive substance	NBO:0002234
+regulation of nicotine consumption	NBO:0002273
+regulation of morphine consumption	NBO:0002308
+behavioral response to anesthetic	NBO:0002362
+nursing behavior	NBO:0002379
+regulation of feeding behavior	NBO:0002436
+regulation of water consumption	NBO:0002468
+regulation of saccharin consumption	NBO:0002511
+adipsia	NBO:0002519
+stress-induced hypothermia	NBO:0002569
+regulation of sexual activity	NBO:0002603
+regulation of drinking preference behavior	NBO:0002660
+regulation of alcohol preference behavior	NBO:0002702
+regulation of eating preference behavior	NBO:0002743
+regulation of saccharin preference behavior	NBO:0002794
+regulation of addictive substance consumption preference	NBO:0002869
+regulation of cocaine consumption preference	NBO:0002916
+regulation of mating preference	NBO:0002948
+angular vestibuloocular reflex	NBO:0002950
+linear vestibuloocular reflex	NBO:0002952
+withdrawal response	NBO:0002986
+regulation of behavioral response to chemical stimulus	NBO:0003047
+regulation of behavioral response to addictive substance	NBO:0003104
+regulation of withdrawal response	NBO:0003142
+addiction response	NBO:0003161
+regulation of addiction response	NBO:0003194
+rotation behavior	NBO:0009001
+locomotor inactivation behavior	NBO:0009002
+hunting behavior	NBO:0009003
+ambush behavior	NBO:0015000
+predator avoidance behavior	NBO:0015001
+trapping behavior	NBO:0015002
+active foraging behavior	NBO:0015003
+obsolete active foraging behavior	NBO:0015004
+smoking behavior	NBO:0015005
+pipe smoking behavior	NBO:0015006
+cigarette smoking behavior	NBO:0015007
+cigar smoking behavior	NBO:0015008
+snuffing behavior	NBO:0015009
+aiding digestion	NBO:0020007
+reproductive status assessment	NBO:0020010
+warn other prey	NBO:0020015
+kill	NBO:0020018
+killing	NBO:0020018
+broadcast advertisement	NBO:0020023
+bluff	NBO:0020031
+contact aggression	NBO:0020033
+beg food	NBO:0020034
+vigilance	NBO:0020037
+chase prey	NBO:0020040
+flush prey	NBO:0020045
+insert genital plug	NBO:0020047
+facilitating oviposition	NBO:0020048
+mate guarding	NBO:0020054
+occupy refuge	NBO:0020059
+coercion	NBO:0020063
+gamete release function	NBO:0020066
+food storage	NBO:0020068
+pair affirmation	NBO:0020071
+display condition (to predator)	NBO:0020077
+jamming	NBO:0020079
+mate finding behavior	NBO:0020084
+resource advertisement	NBO:0020088
+suitability assessment	NBO:0020091
+assessment behavior	NBO:0020093
+trail following to resource	NBO:0020096
+courtship begging	NBO:0020098
+sexual cannibalism	NBO:0020101
+mouth brooding	NBO:0020102
+create refuge	NBO:0020105
+threat	NBO:0020108
+sperm scraping	NBO:0020109
+injure	NBO:0020111
+injuring	NBO:0020111
+agonistic buffering	NBO:0020112
+deploy defense	NBO:0020117
+insemination	NBO:0020121
+construct capturing device	NBO:0020137
+enhance crypsis	NBO:0020139
+agonistic chase	NBO:0020141
+dealing with toxins	NBO:0020142
+recovery from cache	NBO:0020144
+agonistic alarm	NBO:0020145
+distress signaling	NBO:0020149
+cooling behaviour	NBO:0020159
+stalk prey	NBO:0020160
+food exposure	NBO:0020170
+share food	NBO:0020173
+spawning	NBO:0020174
+reduce activity	NBO:0020175
+social acquisition of food	NBO:0020177
+escalation	NBO:0020182
+nutrient locating	NBO:0020188
+feign death	NBO:0020199
+mating amplexus	NBO:0020204
+misdirect predator	NBO:0020219
+exclusion	NBO:0020220
+inspect predator	NBO:0020223
+attack predator	NBO:0020230
+triumph	NBO:0020239
+mating solicitation	NBO:0020241
+build display structure	NBO:0020242
+mimicry enhancement	NBO:0020245
+promote confusion	NBO:0020251
+mating appeasement	NBO:0020253
+sexual harassment	NBO:0020254
+displacement behavior	NBO:0020255
+courtship feeding	NBO:0020264
+spermatophore deposition	NBO:0020266
+flee	NBO:0020268
+hunt for mate	NBO:0020272
+breeding site selection	NBO:0020273
+appeasement	NBO:0020279
+mate sampling	NBO:0020281
+nutrient acquisition	NBO:0020282
+food extraction	NBO:0020286
+aposematism	NBO:0020287
+(predator) detection notification	NBO:0020289
+nutrient preparation	NBO:0020291
+capturing behaviour	NBO:0020292
+capturing prey	NBO:0020293
+caching behavior	NBO:0020294
+food processing	NBO:0020295
+scrounge	NBO:0020296
+scavenge	NBO:0020297
+sexual interference	NBO:0020298
+mate rejection	NBO:0020299
+aggregation behavior	NBO:0040000
+shoaling behavior	NBO:0040001
+schooling behavior	NBO:0040002
+escape behavior	NBO:0040003
+escape	NBO:0040003
+escape	NBO:0040003
+surface breathing	NBO:0040004
+visually guided collision avoidance behavior	NBO:0040005
+tobacco consumption	NBO:0045000
+tobacco chewing behavior	NBO:0045001
+spit	NBO:0045001
+tobacco smoking behavior	NBO:0045002
+tobacco vaping behavior	NBO:0045003
+cannabis consumption	NBO:0045004
+cannabis smoking behavior	NBO:0045005
+marijuana	NBO:0045005
+pot	NBO:0045005
+weed	NBO:0045005
+cannabis vaping behavior	NBO:0045006
+marijuana	NBO:0045006
+pot	NBO:0045006
+weed	NBO:0045006
+cannabis oil consumption	NBO:0045007
+marijuana	NBO:0045007
+grazing behaviour	NBO:0050000
+inchworming behavior	NBO:0050001
+inchworm-like	NBO:0050001
+inchworming	NBO:0050001
+circling behavior	NBO:0050002
+circling	NBO:0050002
+circling	NBO:0050002
+autotomy	NBO:0070000
+migration	NBO:0070001
+Movement	NBO:0070001
+diel vertical migration	NBO:0070002
+geographical migration	NBO:0070003
+stotting	NBO:0070004
+pronking	NBO:0070004
