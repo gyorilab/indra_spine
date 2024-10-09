@@ -1,264 +1,88 @@
-brain_regions = ["(?<region> ([entity=B-Spine] [entity=I-Spine]*))",
-                "both (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and"
-                "[entity=B-Spine] [entity=I-Spine]*",
-                "both [entity=B-Spine] [entity=I-Spine]* and (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*))",
-                "(?<region> ([entity=B-Spine] [entity=I-Spine]*)) and "
-                "[entity=B-Spine] [entity=I-Spine]*",
-                "[entity=B-Spine] [entity=I-Spine]* and (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*))",
-                "(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ "
-                "[entity=B-Spine] [entity=I-Spine]*",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*))",
-                "(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ and "
-                "[entity=B-Spine] [entity=I-Spine]*",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ and (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*))",
-                "(?<region> [tag=JJ] [tag=JJ]* "
-                "bank|formation|division|segment|half|portion|region of the "
-                "[entity=B-Spine] [entity=I-Spine]*)",
-                "(?<region> [tag=RB] [tag=RB]* "
-                "bank|formation|division|segment|half|portion|region of the "
-                "[entity=B-Spine] [entity=I-Spine]*)",
-                "(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ "
-                "[entity=B-Spine] [entity=I-Spine]* and [entity=B-Spine] "
-                "[entity=I-Spine]*",
-                "(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ "
-                "[entity=B-Spine] [entity=I-Spine]*/,/ and [entity=B-Spine] "
-                "[entity=I-Spine]*",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ [entity=B-Spine] "
-                "[entity=I-Spine]* and (?<region> ([entity=B-Spine] "
-                "[entity=I-Spine]*))",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] "
-                "[entity=I-Spine]*",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ [entity=B-Spine] "
-                "[entity=I-Spine]*/,/ and (?<region> ([entity=B-Spine] "
-                "[entity=I-Spine]*))",
-                "[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> "
-                "([entity=B-Spine] [entity=I-Spine]*))/,/ and [entity=B-Spine]"
-                " [entity=I-Spine]*",
-                "(?<region> area [entity=B-Spine] [entity=I-Spine]*)",
-                "(?<region> Area [entity=B-Spine] [entity=I-Spine]*)"]
+from itertools import product
 
-phenotypes = ["(?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)",
-               "both (?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*) and [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*",
-               "both [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]* and (?<phenotype> "
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)",
-               "(?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*) and [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*",
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]* and (?<phenotype> "
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)",
-               "(?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)/,/ [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*",
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*/,/ (?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)",
-               "(?<phenotype> [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)/,/ and [entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*",
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*/,/ and (?<phenotype> "
-               "[entity=B-NeuroBehavior] "
-               "[entity=I-NeuroBehavior]*|[entity=B-Disease] "
-               "[entity=I-Disease]*)",
-               "(?<phenotype> [] disease)",
-               "(?<phenotype> [] disorder)",
-               "(?<phenotype> [] syndrome)",
-               "(?<phenotype> []/'/s disease)"
-               "(?<phenotype> [] /'/s disease)"]
+def load_sentence_pieces(file_path):
+    pieces = {}
+    with open(file_path, 'r') as file:
+        for line in file:
+            # Split each line by the '=' character to get name and string
+            if '=' in line:
+                name, string = line.strip().split('=', 1)
+                pieces[name] = string.strip()
+    return pieces
 
-lemmas_br_br = ("[lemma=project]|[lemma=connect]|[lemma=pathway]|"
-                "[lemma=receive]|[lemma=innervate]|[lemma=originate]|"
-                "[lemma=connection]|[lemma=projection]|[lemma=connectivity]")
-lemmas_br_ph = ("[lemma=implicate]|[lemma=play]|[lemma=develop]|"
-                "[lemma=involve]|[lemma=regulate]|[lemma=control]|"
-                "[lemma=produce]")
-damage = ("([lemma=damage]|loss of function|[lemma=impair]|[lemma=defect]"
-             "|[lemma=destroy]|[lemma=destruct])")
-fromto = "(>nmod_from)|(>nmod_of)|(>nmod_to)|(>nmod_in)|(>nmod_with)"
-connection = ("cortical fibers|fiber|fibers|afferent|afferents|efferent"
-                 "|efferents|neuron|neurons")
+def load_entities(file_path):
+    lists = {}
+    current_list_name = None
 
+    with open(file_path, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith('[') and line.endswith(']'):
+                # Start of a new list
+                current_list_name = line[1:-1]
+                lists[current_list_name] = []
+            elif current_list_name:
+                # Add item to the current list
+                lists[current_list_name].append(line)
 
-# Rule generation
-def create_br_br_rules(br_rule1, br_rule2):
-    """
+    return lists
 
-    Parameters
-    ----------
-    br_rule1
-    br_rule2
+def load_rules(file_path):
+    with open(file_path, 'r') as file:
+        return [line.strip() for line in file if line.strip()]
 
-    This is called in the Rules notebook, which finds each permutation of the
-    rules and plugs them back into this function
-    Returns
-    -------
-    A set of rules for sentences describing brain region-brain region relations
-    """
+def assemble_rules(entity1, entity2):
 
-    entity1 = br_rule1
-    entity2 = br_rule2
+    #Generate all variables
+    pieces = load_sentence_pieces('sentence_pieces.txt')
 
-    # Create rules with whatever the current case is of each entity
-    rule_set = ["{} {} {} {}".format(entity1, lemmas_br_br, fromto,
-                                     entity2),
-                "{} [] [] [] {} {} {}".format(entity1, lemmas_br_br,
-                                              fromto, entity2),
-                "{} >nmod_from {} >nmod_to {}".format(lemmas_br_br,
-                                                      entity1, entity2),
-                "{} >nmod_of {} >nmod_with {}".format(lemmas_br_br,
-                                                      entity1, entity2),
-                "{} [] [] [] [] {} >nmod_to {}".format(lemmas_br_br,
-                                                       entity1, entity2),
-                "{} >nmod_to {} >nmod_from [] [] {}".format(lemmas_br_br,
-                                                            entity1, entity2),
-                "{} [] [] [] {} {} {}".format(entity1, lemmas_br_br,
-                                              fromto, entity2),
-                "{} [lemma=afferent] {} {}".format(entity1, fromto,
-                                                   entity2),
-                "{} which [] [] {} >nmod_to {}".format(entity1,
-                                                       lemmas_br_br, entity2),
-                "{} []* [lemma=efferent] {} []* (?<region> [entity=B-Organ] "
-                "[entity=I-Organ]*)".format(entity1, fromto),
-                "[] (?<region> [entity=B-Organ] [entity=I-Organ]*) "
-                "[lemma=afferent] {} {}".format(fromto, entity1),
-                "{} []* [lemma=efferent] {} []* {}".format(entity1,
-                                                           fromto, entity2),
-                "[] {} [lemma=afferent] {} {}".format(entity1, fromto,
-                                                      entity2),
-                "{} {} {} [] [] {} {}".format(entity1, lemmas_br_br,
-                                              fromto, fromto, entity2),
-                "{} {} [] {} {}".format(entity1, lemmas_br_br, fromto,
-                                        entity2),
-                "{} {} input {} {}".format(entity1, lemmas_br_br, fromto,
-                                           entity2),
-                "{} has {} {} {}".format(entity1, lemmas_br_br, fromto,
-                                         entity2),
-                "{} {} {} {}".format(connection, lemmas_br_br, fromto,
-                                     entity1, lemmas_br_br, fromto, entity2),
-                "{} {} {} {} {}".format(entity1, lemmas_br_br,
-                                        lemmas_br_br, fromto, entity2),
-                "{} {} {} {} {}".format(lemmas_br_br, fromto, entity1,
-                                        fromto, entity2),
-                "{} {} {} {} {}".format(connection, fromto, entity1,
-                                        fromto, entity2),
-                "{} {} {} were {}".format(lemmas_br_br, fromto, entity1,
-                                          entity2),
-                "{} [lemma=show]|[lemma=demonstrate]|[lemma=display]|"
-                "[lemma=suggest] {} {} {}".format(entity1, lemmas_br_br,
-                                                  fromto, entity2),
-                "{} {} {} [] and {}".format(entity1, lemmas_br_br,
-                                            fromto, entity2),
-                "{} {} {} {} [] []* and {}".format(lemmas_br_br, fromto,
-                                                   entity1, fromto, entity2),
-                "{} {} {} {} {}".format(entity1, lemmas_br_br,
-                                        lemmas_br_br, fromto, entity2),
-                "{} {} {} were {}".format(lemmas_br_br, fromto, entity1,
-                                          entity2),
-                "{} {} {} is|was|{} {}".format(connection, fromto,
-                                               entity1, lemmas_br_br, entity2),
-                "{} input {} {}".format(entity1, fromto, entity2)]
-    return rule_set
+    lemmas_br_br = pieces['lemmas_br_br']
+    lemmas_br_ph = pieces['lemmas_br_ph']
+    damage = pieces['damage']
+    fromto = pieces['fromto']
+    connection = pieces['connection']
 
+    br_template = load_rules('br_br.txt')
+    ph_template = load_rules('br_ph.txt')
 
-def create_br_ph_rules(br_rule, ph_rule):
-    """
+    br_br = [
+        rule.format(entity1=entity1, lemmas_br_br=lemmas_br_br,
+                                    fromto=fromto, entity2=entity2,
+                                    damage=damage, connection=connection)
+        for rule in br_template]
 
-    Parameters
-    ----------
-    br_rule
-    ph_rule
+    br_ph = [
+        rule.format(entity1=entity1, lemmas_br_ph=lemmas_br_ph,
+                                    fromto=fromto, entity2=entity2,
+                                    damage=damage, connection=connection)
+        for rule in ph_template]
+    return br_br, br_ph
+def permutations():
+    entities = load_entities('entities.txt')
 
-    This is called in the Rules notebook, which finds each permutation of the
-    rules and plugs them back into this function
-    Returns
-    -------
-    A set of rules for sentences describing brain region-phenotype relations
-    """
+    brain_regions = entities['brain_regions']
+    phenotypes = entities['phenotypes']
 
-    entity1 = br_rule
-    entity2 = ph_rule
+    rules = {'br': [], 'ph': []}
 
-    # Create rules with whatever the current case is of each entity
-    rule_set = ["{} {} {} {}".format(entity1, lemmas_br_ph, fromto, entity2),
-                "{} [] [] [] {} {} {}".format(entity1, lemmas_br_ph,
-                                              fromto, entity2),
-                "{} {} {} {}".format(entity1, lemmas_br_ph, fromto,
-                                     entity2),
-                "{} {} {} {}".format(entity2, lemmas_br_ph, fromto,
-                                     entity1),
-                "{} {} [] [] [] {} {}".format(entity1, lemmas_br_ph,
-                                              fromto, entity2),
-                "{} {} [] [] [] {} {}".format(entity2, lemmas_br_ph,
-                                              fromto, entity1),
-                "{} {} {} [] [] [] {}".format(entity1, lemmas_br_ph,
-                                              fromto, entity2),
-                "{} {} {} [] [] [] {}".format(entity2, lemmas_br_ph,
-                                              fromto, entity1),
-                "{} [] responsible for {}".format(entity1, entity2),
-                "{}/,/ [] [] [] responsible for {}".format(entity1,
-                                                           entity2),
-                "{} is a structure {} {} {}".format(entity1,
-                                                    lemmas_br_ph, fromto,
-                                                    entity2),
-                "{} is a region {} {} {}".format(entity1, lemmas_br_ph,
-                                                 fromto, entity2),
-                "{} {} {} {} {} {}".format(entity1, lemmas_br_ph, fromto,
-                                           damage, fromto, entity2),
-                "{} {} {} {} {} {}".format(entity2, lemmas_br_ph, fromto,
-                                           damage, fromto, entity1),
-                "{} {} {} {} {} {} {} {}".format(damage, fromto,
-                                                 entity2, lemmas_br_ph, fromto,
-                                                 damage, fromto,
-                                                 entity1),
-                "{} {} {} {} {} {} {} {}".format(damage, fromto,
-                                                 entity1, lemmas_br_ph, fromto,
-                                                 damage, fromto,
-                                                 entity2),
-                "{} [] [] [] {} {} {} {} {}".format(entity1,
-                                                    lemmas_br_ph, fromto,
-                                                    damage, fromto,
-                                                    entity2),
-                "{} [] [] [] {} {} {} {} {}".format(entity2, lemmas_br_ph,
-                                                    fromto, damage, fromto,
-                                                    entity1),
-                "{} {} [] [] [] {} {} {} {}".format(entity1,
-                                                    lemmas_br_ph, fromto,
-                                                    damage, fromto,
-                                                    entity2),
-                "{} {} [] [] [] {} {} {} {}".format(entity2,
-                                                    lemmas_br_ph, fromto,
-                                                    damage, fromto,
-                                                    entity1),
-                "{} {} [] by {}".format(entity1, damage, entity2),
-                "Brain {} {} {}".format(damage, fromto, entity1,
-                                        lemmas_br_ph, fromto, entity2)]
+    for br_1, br_2 in product(brain_regions, brain_regions):
+        br_version = assemble_rules(br_1, br_2)[0]
+        for rule in br_version:
+            rules['br'].append(rule)
 
-    return rule_set
+    for br, ph in product(brain_regions, phenotypes):
+        ph_version = assemble_rules(br, ph)[1]
+        for rule in ph_version:
+            rules['ph'].append(rule)
+
+    return rules
+
+def main():
+
+   print(permutations()['br'][0:30])
+   print(len(permutations()['br']))
+   print(permutations()['ph'][0:30])
+   print(len(permutations()['ph']))
+
+if __name__ == "__main__":
+    main()

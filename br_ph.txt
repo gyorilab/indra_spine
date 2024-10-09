@@ -1,0 +1,22 @@
+{entity1} {lemmas_br_ph} {fromto} {entity2}
+{entity1} [] [] [] {lemmas_br_ph} {fromto} {entity2}
+{entity1} {lemmas_br_ph} {fromto} {entity2}
+{entity2} {lemmas_br_ph} {fromto} {entity1}
+{entity1} {lemmas_br_ph} [] [] [] {fromto} {entity2}
+{entity2} {lemmas_br_ph} [] [] [] {fromto} {entity1}
+{entity1} {lemmas_br_ph} {fromto} [] [] [] {entity2}
+{entity2} {lemmas_br_ph} {fromto} [] [] [] {entity1}
+{entity1} [] responsible for {entity2}
+{entity1}/,/ [] [] [] responsible for {entity2}
+{entity1} is a structure {lemmas_br_ph} {fromto} {entity2}
+{entity1} is a region {lemmas_br_ph} {fromto} {entity2}
+{entity1} {lemmas_br_ph} {fromto} {damage} {fromto} {entity2}
+{entity2} {lemmas_br_ph} {fromto} {damage} {fromto} {entity1}
+{damage} {fromto} {entity2} {lemmas_br_ph} {fromto} {damage} {fromto} {entity1}
+{damage} {fromto} {entity1} {lemmas_br_ph} {fromto} {damage} {fromto} {entity2}
+{entity1} [] [] [] {lemmas_br_ph} {fromto} {damage} {fromto} {entity2}
+{entity2} [] [] [] {lemmas_br_ph} {fromto} {damage} {fromto} {entity1}
+{entity1} {lemmas_br_ph} [] [] [] {fromto} {damage} {fromto} {entity2}
+{entity2} {lemmas_br_ph} [] [] [] {fromto} {damage} {fromto} {entity1}
+{entity1} {damage} [] by {entity2}
+Brain {damage} {fromto} {entity1}

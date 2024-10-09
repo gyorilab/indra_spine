@@ -1,6 +1,6 @@
 [brain_regions]
 (?<region> ([entity=B-Spine] [entity=I-Spine]*))
-both (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and[entity=B-Spine] [entity=I-Spine]*
+both (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] [entity=I-Spine]*
 both [entity=B-Spine] [entity=I-Spine]* and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
 (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] [entity=I-Spine]*
 [entity=B-Spine] [entity=I-Spine]* and (?<region> ([entity=B-Spine] [entity=I-Spine]*))

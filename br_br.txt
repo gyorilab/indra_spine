@@ -1,0 +1,29 @@
+{entity1} {lemmas_br_br} {fromto} {entity2}
+{entity1} [] [] [] {lemmas_br_br} {fromto} {entity2}
+{lemmas_br_br} >nmod_from {entity1} >nmod_to {entity2}
+{lemmas_br_br} >nmod_of {entity1} >nmod_with {entity2}
+{lemmas_br_br} [] [] [] [] {entity1} >nmod_to {entity2}
+{lemmas_br_br} >nmod_to {entity1} >nmod_from [] [] {entity2}
+{entity1} [] [] [] {lemmas_br_br} {fromto} {entity2}
+{entity1} [lemma=afferent] {fromto} {entity2}
+{entity1} which [] [] {lemmas_br_br} >nmod_to {entity2}
+{entity1} []* [lemma=efferent] {fromto} []* (?<region> [entity=B-Organ] [entity=I-Organ]*)
+[] (?<region> [entity=B-Organ] [entity=I-Organ]*) [lemma=afferent] {fromto} {entity1}
+{entity1} []* [lemma=efferent] {fromto} []* {entity2}
+[] {entity1} [lemma=afferent] {fromto} {entity2}
+{entity1} {lemmas_br_br} {fromto} [] [] {fromto} {entity2}
+{entity1} {lemmas_br_br} [] {fromto} {entity2}
+{entity1} {lemmas_br_br} input {fromto} {entity2}
+{entity1} has {lemmas_br_br} {fromto} {entity2}
+{connection} {lemmas_br_br} {fromto} {entity1}
+{entity1} {lemmas_br_br} {lemmas_br_br} {fromto} {entity2}
+{lemmas_br_br} {fromto} {entity1} {fromto} {entity2}
+{connection} {fromto} {entity1} {fromto} {entity2}
+{lemmas_br_br} {fromto} {entity1} were {entity2}
+{entity1} [lemma=show]|[lemma=demonstrate]|[lemma=display]|[lemma=suggest] {lemmas_br_br} {fromto} {entity2}
+{entity1} {lemmas_br_br} {fromto} [] and {entity2}
+{lemmas_br_br} {fromto} {entity1} {fromto} [] []* and {entity2}
+{entity1} {lemmas_br_br} {lemmas_br_br} {fromto} {entity2}
+{lemmas_br_br} {fromto} {entity1} were {entity2}
+{connection} {fromto} {entity1} is|was|{lemmas_br_br} {entity2}
+{entity1} input {fromto} {entity2}
