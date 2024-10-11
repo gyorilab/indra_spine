@@ -146,10 +146,6 @@ def br_ph_rules():
                 ph_relations.append(relation)
     return ph_relations
 
-#def interaction_network(relations, ph_relations):
-
-
-
 def main():
     '''
 
