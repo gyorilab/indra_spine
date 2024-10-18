@@ -7,6 +7,8 @@ def interaction_network():
 
     relations = rule_run.br_rules()
     ph_relations = rule_run.br_ph_rules()
+    
+    print(len(relations))
 
     G = nx.Graph()
     plt.figure(figsize=(50, 50))

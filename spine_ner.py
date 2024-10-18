@@ -6,9 +6,26 @@ from collections import defaultdict
 from gilda.process import normalize
 from pyobo.gilda_utils import get_gilda_terms
 
+import os
+
+import sys
+print(sys.executable)
+
+
+# Get the REACH_HOME environment variable
+reach_home = os.environ.get('REACH_HOME')
+
+if not reach_home:
+    raise EnvironmentError("REACH_HOME is not set in environment variables.")
+
+# Example of using REACH_HOME in the path
+spine_file = os.path.join(reach_home, 'bioresources', 'src', 'main',
+                             'resources', 'org', 'clulab', 'reach', 'kb',
+                             'spine.tsv')
+'''
 spine_file = '/Users/sangeethavempati/Documents/GitHub/reach/bioresources/' \
              'src/main/resources/org/clulab/reach/kb/spine.tsv'
-
+'''
 # Reformat terms
 df = pd.read_csv(spine_file, sep='\t', header=None, names=['name', 'id'])
 # For each id, make a list of the corresponding brain regions
