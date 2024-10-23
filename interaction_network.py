@@ -2,13 +2,15 @@ import rule_run
 import networkx as nx
 import pygraphviz as pgv
 import matplotlib.pyplot as plt
+import os
 
-def interaction_network():
+def interaction_network(term):
 
     relations = rule_run.br_rules()
     ph_relations = rule_run.br_ph_rules()
-    
-    print(len(relations))
+
+    os.makedirs(term + '_network', exist_ok=True)
+    os.chdir(term + '_network')
 
     G = nx.Graph()
     plt.figure(figsize=(50, 50))
@@ -30,6 +32,22 @@ def interaction_network():
                                      font_color='k', font_family='sans-serif',
                                      font_weight='normal')
 
+    num_nodes = G.number_of_nodes()
+    num_edges = G.number_of_edges()
+
+    with open('relation_information.txt', 'w') as file:
+        file.write('Number of brain region-brain region relations: ' +
+                   str(len(relations)))
+        file.write('Number of brain region-phenotype relations: ' +
+                   str(len(ph_relations)))
+        file.write('Number of nodes: ' + str(num_nodes))
+        file.write('Number of edges: ' + str(num_edges))
+
+    plt.savefig(f'{term}_network.png', format='PNG')
+    plt.close()
+
+    plt.savefig(f'{term}_network.pdf', format='PDF')
+    plt.close()
 def main():
     interaction_network()
     print()

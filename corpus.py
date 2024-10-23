@@ -4,24 +4,18 @@ from indra_db.client.principal.content import get_text
 import os
 from indra.literature import pubmed_client
 
+def get_ids(term):
+    # get a list of pubmed IDs for the search term
+    ids = pubmed_client.get_all_ids(term)
+    return ids
 
-def main():
-
-    #get a list of pubmed IDs for the search term
-    test = pubmed_client
-    ids = pubmed_client.get_all_ids('ataxia')
-    
-    print(len(ids))
-
-    os.makedirs('test_corpus', exist_ok=True)
-    os.chdir('test_corpus')
+def make_text_folder(term, ids):
+    os.makedirs(term + '/text', exist_ok=True)
+    os.chdir(term + '/text')
 
     db = get_db('primary')
-    text = get_text(db, ids[:10], 'abstract')
+    text = get_text(db, ids, 'abstract')
 
     for pmid,content in text.items():
         with open('{}.txt'.format(pmid),'w') as file:
             file.write(content)
-
-if __name__ == "__main__":
-    main()

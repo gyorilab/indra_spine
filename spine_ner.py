@@ -22,10 +22,7 @@ if not reach_home:
 spine_file = os.path.join(reach_home, 'bioresources', 'src', 'main',
                              'resources', 'org', 'clulab', 'reach', 'kb',
                              'spine.tsv')
-'''
-spine_file = '/Users/sangeethavempati/Documents/GitHub/reach/bioresources/' \
-             'src/main/resources/org/clulab/reach/kb/spine.tsv'
-'''
+
 # Reformat terms
 df = pd.read_csv(spine_file, sep='\t', header=None, names=['name', 'id'])
 # For each id, make a list of the corresponding brain regions

@@ -12,7 +12,10 @@ It also requires access to the Odinson web service, which can be found by runnin
 docker pull lumai/odinson-rest-api
 ```
 
-The starting point for using INDRA-SPINE is a corpus of articles or abstracts. It should be stored as a set of text files with the extension `.txt` in a folder called `text` within a larger folder named for the corpus. We have provided a notebook called `DB_Corpus`, for easy access to downloading articles from PubMed using INDRA and INDRA DB.
+The starting point for using INDRA-SPINE is a corpus of articles or abstracts. It will be stored as a set of text files with the extension `.txt` in a folder called `text` within a larger folder named for the corpus. Easy access to downloading articles from PubMed using INDRA and INDRA DB is available via the CLI provided. The user simply has to run this command in Terminal, substituting in the desired search term:
+``` 
+python cli.py corpus searchterm
+``` 
 
 The next step is to configure Odinson. The `odinson.dataDir` variable in the `application.conf` file (which is located at `extra/src/main/resources`) should be updated to point to the directory containing the corpus.
 
@@ -33,9 +36,12 @@ sbt -java-home $JAVA_HOME "extra/runMain ai.lum.odinson.extra.AnnotateText"
 sbt -java-home $JAVA_HOME "extra/runMain ai.lum.odinson.extra.IndexDocuments"
 ```
 
-Following this, the docker for the Odinson web service should be run using this command:
+Following this, the docker for the Odinson web service should be run using this command, with the path updated to the directory where the corpus was generated:
 ```
 docker run -v /path_to_corpus:/app/data/odinson -p 9000:9000 lumai/odinson-rest-api
 ```
 
-The interaction network file can then be used to extract relations from the corpus and generate graphs.
+The interaction network file can then be used to extract relations from the corpus and generate graphs. This can also be accessed via the CLI. The user simply has to run this command in Terminal, substituting in the desired search term:
+``` 
+python cli.py 'interaction network' searchterm
+```
