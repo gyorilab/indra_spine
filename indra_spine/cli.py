@@ -1,8 +1,9 @@
 import argparse
 import os
 import subprocess
-import corpus
-import interaction_network
+
+from . import corpus
+from interaction_network import interaction_network
 
 
 def run_file(file_path):
@@ -37,11 +38,10 @@ def main():
     args = parser.parse_args()
 
     if args.command == 'corpus':
-        ids = corpus.get_ids(
-            args.term)
+        ids = corpus.get_ids(args.term)
         corpus.make_text_folder(args.term, ids)
     elif args.command == 'interaction network':
-        interaction_network.interaction_network(args.term)
+        interaction_network(args.term)
     elif args.file:
         run_file(args.file)
     else:

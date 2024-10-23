@@ -14,7 +14,7 @@ docker pull lumai/odinson-rest-api
 
 The starting point for using INDRA-SPINE is a corpus of articles or abstracts. It will be stored as a set of text files with the extension `.txt` in a folder called `text` within a larger folder named for the corpus. Easy access to downloading articles from PubMed using INDRA and INDRA DB is available via the CLI provided. The user simply has to run this command in Terminal, substituting in the desired search term:
 ``` 
-python cli.py corpus searchterm
+python -m indraq_spine.cli corpus searchterm
 ``` 
 
 The next step is to configure Odinson. The `odinson.dataDir` variable in the `application.conf` file (which is located at `extra/src/main/resources`) should be updated to point to the directory containing the corpus.
@@ -43,5 +43,5 @@ docker run -v /path_to_corpus:/app/data/odinson -p 9000:9000 lumai/odinson-rest-
 
 The interaction network file can then be used to extract relations from the corpus and generate graphs. This can also be accessed via the CLI. The user simply has to run this command in Terminal, substituting in the desired search term:
 ``` 
-python cli.py 'interaction network' searchterm
+python -m indra_spine.cli 'interaction network' searchterm
 ```

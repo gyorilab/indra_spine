@@ -1,14 +1,19 @@
-import rule_run
+import os
+
 import networkx as nx
 import pygraphviz as pgv
 import matplotlib.pyplot as plt
-import os
+
+from rule_run import br_rules, br_ph_rules
+
 
 def interaction_network(term):
+    """Returns a network of brain region-brain region and brain region-phenotype"""
 
-    relations = rule_run.br_rules()
-    ph_relations = rule_run.br_ph_rules()
+    relations = br_rules()
+    ph_relations = br_ph_rules()
 
+    # TODO: configurable file path for this?
     os.makedirs(term + '_network', exist_ok=True)
     os.chdir(term + '_network')
 
@@ -35,6 +40,7 @@ def interaction_network(term):
     num_nodes = G.number_of_nodes()
     num_edges = G.number_of_edges()
 
+    # TODO: configurable file path for this file?
     with open('relation_information.txt', 'w') as file:
         file.write('Number of brain region-brain region relations: ' +
                    str(len(relations)))
@@ -48,10 +54,15 @@ def interaction_network(term):
 
     plt.savefig(f'{term}_network.pdf', format='PDF')
     plt.close()
+
+
+# TODO: is the main needed?
 def main():
     interaction_network()
     print()
+    # TODO: can X.pdf be something customizable?
     plt.savefig("X.pdf")
+
 
 if __name__ == "__main__":
     main()

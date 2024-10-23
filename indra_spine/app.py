@@ -1,8 +1,10 @@
 import os
+
 from flask import Flask, Response, abort, jsonify, render_template, request
 from flask_restx import Api, Resource, fields
 from indra.literature import pubmed_client
-from indra_spine.process import get_agents, get_network_edges, get_nice_cx_network
+
+from .process import get_agents, get_network_edges, get_nice_cx_network
 
 app = Flask(__name__)
 app.config['RESTX_MASK_SWAGGER'] = False

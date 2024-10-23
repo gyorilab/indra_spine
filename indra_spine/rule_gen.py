@@ -1,4 +1,14 @@
+"""
+This module implements...
+
+"""
+
+import os
 from itertools import product
+
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
 
 def load_sentence_pieces(file_path):
     pieces = {}
@@ -9,6 +19,7 @@ def load_sentence_pieces(file_path):
                 name, string = line.strip().split('=', 1)
                 pieces[name] = string.strip()
     return pieces
+
 
 def load_entities(file_path):
     lists = {}
@@ -27,14 +38,16 @@ def load_entities(file_path):
 
     return lists
 
+
 def load_rules(file_path):
     with open(file_path, 'r') as file:
         return [line.strip() for line in file if line.strip()]
 
+
 def assemble_rules(entity1, entity2):
 
     #Generate all variables
-    pieces = load_sentence_pieces('sentence_pieces.txt')
+    pieces = load_sentence_pieces(os.path.join('resources', 'sentence_pieces.txt'))
 
     lemmas_br_br = pieces['lemmas_br_br']
     lemmas_br_ph = pieces['lemmas_br_ph']
@@ -42,23 +55,25 @@ def assemble_rules(entity1, entity2):
     fromto = pieces['fromto']
     connection = pieces['connection']
 
-    br_template = load_rules('br_br.txt')
-    ph_template = load_rules('br_ph.txt')
+    br_template = load_rules(os.path.join('resources', 'br_br.txt'))
+    ph_template = load_rules(os.path.join('resources', 'br_ph.txt'))
 
     br_br = [
         rule.format(entity1=entity1, lemmas_br_br=lemmas_br_br,
-                                    fromto=fromto, entity2=entity2,
-                                    damage=damage, connection=connection)
+                    fromto=fromto, entity2=entity2,
+                    damage=damage, connection=connection)
         for rule in br_template]
 
     br_ph = [
         rule.format(entity1=entity1, lemmas_br_ph=lemmas_br_ph,
-                                    fromto=fromto, entity2=entity2,
-                                    damage=damage, connection=connection)
+                    fromto=fromto, entity2=entity2,
+                    damage=damage, connection=connection)
         for rule in ph_template]
     return br_br, br_ph
+
+
 def permutations():
-    entities = load_entities('entities.txt')
+    entities = load_entities(os.path.join('resources', 'entities.txt'))
 
     brain_regions = entities['brain_regions']
     phenotypes = entities['phenotypes']
@@ -77,6 +92,8 @@ def permutations():
 
     return rules
 
+
+# TODO: main needed?
 def main():
 
    print(permutations()['br'][0:30])
