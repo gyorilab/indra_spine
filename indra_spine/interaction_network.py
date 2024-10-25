@@ -52,7 +52,6 @@ def interaction_network(path, term):
 
     plt.savefig(os.path.join(absolute_path, f'{term}_network.png'),
                 format='PNG')
-    plt.close()
 
     plt.savefig(os.path.join(absolute_path, f'{term}_network.pdf'),
                 format='PDF')
