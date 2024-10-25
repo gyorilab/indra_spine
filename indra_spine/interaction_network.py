@@ -1,21 +1,22 @@
 import os
 
 import networkx as nx
-import pygraphviz as pgv
 import matplotlib.pyplot as plt
 
-from rule_run import br_rules, br_ph_rules
+from .rule_run import br_rules, br_ph_rules
 
 
-def interaction_network(term):
-    """Returns a network of brain region-brain region and brain region-phenotype"""
+def interaction_network(path, term):
+    """
+    Returns a network of brain region-brain region and brain region-phenotype
+    """
+
+    absolute_path = os.path.abspath(os.path.expanduser(os.path.join(path, term + '_network')))
+    os.makedirs(absolute_path, exist_ok=True)
+    os.chdir(absolute_path)
 
     relations = br_rules()
     ph_relations = br_ph_rules()
-
-    # TODO: configurable file path for this?
-    os.makedirs(term + '_network', exist_ok=True)
-    os.chdir(term + '_network')
 
     G = nx.Graph()
     plt.figure(figsize=(50, 50))
@@ -40,29 +41,19 @@ def interaction_network(term):
     num_nodes = G.number_of_nodes()
     num_edges = G.number_of_edges()
 
-    # TODO: configurable file path for this file?
-    with open('relation_information.txt', 'w') as file:
+    with (open(os.path.join(absolute_path, 'relation_information.txt'), 'w')
+          as file):
         file.write('Number of brain region-brain region relations: ' +
-                   str(len(relations)))
+                   str(len(relations)) + '\n')
         file.write('Number of brain region-phenotype relations: ' +
-                   str(len(ph_relations)))
-        file.write('Number of nodes: ' + str(num_nodes))
-        file.write('Number of edges: ' + str(num_edges))
+                   str(len(ph_relations)) + '\n')
+        file.write('Number of nodes: ' + str(num_nodes) + '\n')
+        file.write('Number of edges: ' + str(num_edges) + '\n')
 
-    plt.savefig(f'{term}_network.png', format='PNG')
+    plt.savefig(os.path.join(absolute_path, f'{term}_network.png'),
+                format='PNG')
     plt.close()
 
-    plt.savefig(f'{term}_network.pdf', format='PDF')
+    plt.savefig(os.path.join(absolute_path, f'{term}_network.pdf'),
+                format='PDF')
     plt.close()
-
-
-# TODO: is the main needed?
-def main():
-    interaction_network()
-    print()
-    # TODO: can X.pdf be something customizable?
-    plt.savefig("X.pdf")
-
-
-if __name__ == "__main__":
-    main()

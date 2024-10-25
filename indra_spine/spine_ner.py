@@ -15,7 +15,8 @@ def get_spine_grounder():
     reach_home = os.environ.get('REACH_HOME')
 
     if not reach_home:
-        raise EnvironmentError("REACH_HOME is not set in environment variables.")
+        raise EnvironmentError("REACH_HOME is not set in "
+                               "environment variables.")
 
     # Example of using REACH_HOME in the path
     spine_file = os.path.join(reach_home, 'bioresources', 'src', 'main',

@@ -11,10 +11,10 @@ def get_ids(term):
     return ids
 
 
-def make_text_folder(term, ids):
-    # TODO: this should be in a folder path that the user selects, not inside the package
-    os.makedirs(term + '/text', exist_ok=True)
-    os.chdir(term + '/text')
+def make_text_folder(path, term, ids):
+    absolute_path = os.path.abspath(os.path.expanduser(os.path.join(path, term, 'text')))
+    os.makedirs(absolute_path, exist_ok=True)
+    os.chdir(absolute_path)
 
     db = get_db('primary')
     text = get_text(db, ids, 'abstract')

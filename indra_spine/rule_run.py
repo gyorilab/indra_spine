@@ -1,5 +1,5 @@
 """"
-This module implements...
+This module creates a set of rules and runs them against the annotated corpus
 
 """
 
@@ -30,9 +30,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 def stop_words():
     nltk.download('stopwords')
     sw_nltk = stopwords.words('english')
-    with open(os.path.join('resources', 'exclude_words.txt'), 'r') as file:
+    with open(os.path.join(HERE, 'resources', 'exclude_words.txt'), 'r') as file:
         exclude_words = [line.strip() for line in file if line.strip()]
-    with open(os.path.join('resources', 'false_phrases.txt'), 'r') as file:
+    with open(os.path.join(HERE, 'resources', 'false_phrases.txt'), 'r') as file:
         false_phrases = [line.strip() for line in file if line.strip()]
 
     excluded = {'stopwords': sw_nltk, 'exclude': exclude_words,
@@ -97,12 +97,13 @@ def br_rules():
 
 
 def br_ph_rules():
-    ph_rules = rule_set()['ph']
+    perms = permutations()
+    ph_rules = perms['ph']
 
     sw_nltk = stop_words()['stopwords']
     exclude_words = stop_words()['exclude']
 
-    grounder = spine_grounder()
+    grounder = get_spine_grounder()
 
     ph_relations = []
 
@@ -148,24 +149,4 @@ def br_ph_rules():
                     relation[0][1] != relation[1][1]:
                 ph_relations.append(relation)
     return ph_relations
-
-
-# TODO: main needed?
-def main():
-    '''
-
-    Returns
-    -------
-
-    '''
-
-    relations = br_rules()
-    print(len(relations))
-
-    ph_relations = br_ph_rules()
-    print(len(ph_relations))
-
-
-if __name__ == "__main__":
-    main()
 

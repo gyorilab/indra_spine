@@ -1,5 +1,5 @@
 """
-This module implements...
+This module implements creation of grammatical rules
 
 """
 
@@ -47,7 +47,8 @@ def load_rules(file_path):
 def assemble_rules(entity1, entity2):
 
     #Generate all variables
-    pieces = load_sentence_pieces(os.path.join('resources', 'sentence_pieces.txt'))
+    pieces = load_sentence_pieces(os.path.join(HERE, 'resources',
+                                               'sentence_pieces.txt'))
 
     lemmas_br_br = pieces['lemmas_br_br']
     lemmas_br_ph = pieces['lemmas_br_ph']
@@ -55,8 +56,8 @@ def assemble_rules(entity1, entity2):
     fromto = pieces['fromto']
     connection = pieces['connection']
 
-    br_template = load_rules(os.path.join('resources', 'br_br.txt'))
-    ph_template = load_rules(os.path.join('resources', 'br_ph.txt'))
+    br_template = load_rules(os.path.join(HERE, 'resources', 'br_br.txt'))
+    ph_template = load_rules(os.path.join(HERE, 'resources', 'br_ph.txt'))
 
     br_br = [
         rule.format(entity1=entity1, lemmas_br_br=lemmas_br_br,
@@ -73,7 +74,7 @@ def assemble_rules(entity1, entity2):
 
 
 def permutations():
-    entities = load_entities(os.path.join('resources', 'entities.txt'))
+    entities = load_entities(os.path.join(HERE, 'resources', 'entities.txt'))
 
     brain_regions = entities['brain_regions']
     phenotypes = entities['phenotypes']
@@ -91,15 +92,3 @@ def permutations():
             rules['ph'].append(rule)
 
     return rules
-
-
-# TODO: main needed?
-def main():
-
-   print(permutations()['br'][0:30])
-   print(len(permutations()['br']))
-   print(permutations()['ph'][0:30])
-   print(len(permutations()['ph']))
-
-if __name__ == "__main__":
-    main()
