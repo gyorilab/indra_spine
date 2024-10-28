@@ -1,3 +1,7 @@
+"""
+This module creates a corpus of text files based on a search term
+"""
+
 import os
 
 from indra_db import get_db
@@ -12,7 +16,8 @@ def get_ids(term):
 
 
 def make_text_folder(path, term, ids):
-    absolute_path = os.path.abspath(os.path.expanduser(os.path.join(path, term, 'text')))
+    absolute_path = os.path.abspath(os.path.expanduser(os.path.join(path, term,
+                                                                    'text')))
     os.makedirs(absolute_path, exist_ok=True)
     os.chdir(absolute_path)
 

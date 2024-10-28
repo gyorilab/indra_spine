@@ -30,9 +30,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 def stop_words():
     nltk.download('stopwords')
     sw_nltk = stopwords.words('english')
-    with open(os.path.join(HERE, 'resources', 'exclude_words.txt'), 'r') as file:
+    with (open(os.path.join(HERE, 'resources', 'exclude_words.txt'), 'r') as
+          file):
         exclude_words = [line.strip() for line in file if line.strip()]
-    with open(os.path.join(HERE, 'resources', 'false_phrases.txt'), 'r') as file:
+    with (open(os.path.join(HERE, 'resources', 'false_phrases.txt'), 'r') as
+          file):
         false_phrases = [line.strip() for line in file if line.strip()]
 
     excluded = {'stopwords': sw_nltk, 'exclude': exclude_words,
@@ -76,7 +78,7 @@ def br_rules():
                                       word.lower() not in sw_nltk]
                     word = ' '.join(processed_term)
                     if word.lower() not in exclude_words:
-                        # Create tuples with curies for terms that can be grounded
+                        # Create tuples w/curies for terms that can be grounded
                         spine_scored_match = grounder.ground(word)
                         gilda_scored_match = gilda.ground(word)
 
@@ -132,7 +134,7 @@ def br_ph_rules():
                                       word.lower() not in sw_nltk]
                     word = ' '.join(processed_term)
                     if word.lower() not in exclude_words:
-                        # Create tuples with curies for terms that can be grounded
+                        # Create tuples w/curies for terms that can be grounded
                         spine_scored_match = grounder.ground(word)
                         gilda_scored_match = gilda.ground(word)
 

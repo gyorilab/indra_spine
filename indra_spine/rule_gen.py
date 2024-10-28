@@ -46,7 +46,7 @@ def load_rules(file_path):
 
 def assemble_rules(entity1, entity2):
 
-    #Generate all variables
+    # Generate all variables
     pieces = load_sentence_pieces(os.path.join(HERE, 'resources',
                                                'sentence_pieces.txt'))
 

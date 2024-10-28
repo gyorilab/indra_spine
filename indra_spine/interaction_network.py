@@ -1,3 +1,8 @@
+"""
+This module creates an interaction network using the two types of rules and
+stores results in a folder named for the search term
+"""
+
 import os
 
 import networkx as nx
@@ -11,7 +16,8 @@ def interaction_network(path, term):
     Returns a network of brain region-brain region and brain region-phenotype
     """
 
-    absolute_path = os.path.abspath(os.path.expanduser(os.path.join(path, term + '_network')))
+    absolute_path = os.path.abspath(os.path.expanduser
+                                    (os.path.join(path, term + '_network')))
     os.makedirs(absolute_path, exist_ok=True)
     os.chdir(absolute_path)
 
