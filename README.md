@@ -17,16 +17,22 @@ REACH and Odinson need to be customized prior to using INDRA-SPINE. This can be 
 
 **Step One**
 INDRA-SPINE's resources folder contains two tsv files: `spine.tsv` and `neuro-behavior.tsv`. These should both be added to the `src/main/resources/org/clulab/reach/kb` folder within the local version of REACH. 
+
 **Step Two**
 A new entry for each then needs to be added to `src/main/resources/application.conf` under the `KnowledgeBases` block. 
+
 **Step Three**
 Two new entity types need to be added to the taxonomy with REACH at `main/src/main/resources/org/clulab/reach/biogrammar/taxonomy.yml`.
+
 **Step Four**
 Two new rules need to be added to `main/src/main/resources/org/clulab/reach/biogrammar/entities/entities.yml`.
+
 **Step Five**
 The `version.sbt` file should then be updated with a new version number. 
+
 **Step Six**
 The `build.sbt` file contains a line `.aggregate(processors, main, causalAssembly, export)`, which needs to be updated to `.aggregate(processors, main, causalAssembly, export, bioresources)`. 
+
 **Step Seven**
 The final step is to run `sbt compile` and `sbt publishLocal` on REACH.
 
@@ -34,8 +40,10 @@ The final step is to run `sbt compile` and `sbt publishLocal` on REACH.
 
 **Step One**
 Within Odinson, in `extra/build.sbt`, the line `"org.clulab" %% "reach-processors" % "1.6.4-SNAPSHOT"` should be added to the `libraryDependencies` block, but with the same version number that was added to `version.sbt` in REACH. 
+
 **Step Two**
 In `extra/src/main/resources/application.conf`, the line `processorType    = "CluProcessor"`, should be replaced with the line `processorType    = "BioNLPProcessor"`. 
+
 **Step Three**
 In `extra/src/main/scala/ai/lum/odinson/extra/utils/ProcessorsUtils.scala`, the line `import org.clulab.processors.bionlp.BioNLPProcessor` should be added under the line `import org.clulab.processors.fastnlp.FastNLPProcessor` and the block
 ```
@@ -45,6 +53,7 @@ case "BioNLPProcessor" => {
       }
 ```
 should be added within `getProcessor`. 
+
 **Step Four**
 In the file at `extra/src/main/scala/ai/lum/odinson/extra/AnnotateText.scala` the line `import org.clulab.processors.bionlp.BioNLPProcessor` should be added, and within `annotateTextFile`, this block should be added:
 ```
