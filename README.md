@@ -63,6 +63,9 @@ processor match {
     }
 ```
 
+**Step Five**
+The final step is to run `sbt compile` and `sbt publishLocal` on Odinson.
+
 ## Odinson Web Service
 Using INDRA-SPINE also requires access to the Odinson web service, which can be found by running this command:
 ```
