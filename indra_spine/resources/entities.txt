@@ -1,0 +1,34 @@
+[brain_regions]
+(?<region> ([entity=B-Spine] [entity=I-Spine]*))
+both (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] [entity=I-Spine]*
+both [entity=B-Spine] [entity=I-Spine]* and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+(?<region> ([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] [entity=I-Spine]*
+[entity=B-Spine] [entity=I-Spine]* and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ [entity=B-Spine] [entity=I-Spine]*
+[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ and [entity=B-Spine] [entity=I-Spine]*
+[entity=B-Spine] [entity=I-Spine]*/,/ and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+(?<region> [tag=JJ] [tag=JJ]* bank|formation|division|segment|half|portion|region of the [entity=B-Spine] [entity=I-Spine]*)
+(?<region> [tag=RB] [tag=RB]* bank|formation|division|segment|half|portion|region of the [entity=B-Spine] [entity=I-Spine]*)
+(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ [entity=B-Spine] [entity=I-Spine]* and [entity=B-Spine] [entity=I-Spine]*
+(?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ [entity=B-Spine] [entity=I-Spine]*/,/ and [entity=B-Spine] [entity=I-Spine]*
+[entity=B-Spine] [entity=I-Spine]*/,/ [entity=B-Spine] [entity=I-Spine]* and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> ([entity=B-Spine] [entity=I-Spine]*)) and [entity=B-Spine] [entity=I-Spine]*
+[entity=B-Spine] [entity=I-Spine]*/,/ [entity=B-Spine] [entity=I-Spine]*/,/ and (?<region> ([entity=B-Spine] [entity=I-Spine]*))
+[entity=B-Spine] [entity=I-Spine]*/,/ (?<region> ([entity=B-Spine] [entity=I-Spine]*))/,/ and [entity=B-Spine] [entity=I-Spine]*
+(?<region> area [entity=B-Spine] [entity=I-Spine]*)
+(?<region> Area [entity=B-Spine] [entity=I-Spine]*)
+[phenotypes]
+(?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)
+both (?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*) and [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*
+both [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]* and (?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)
+(?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*) and [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*
+[entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]* and (?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)
+(?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)/,/ [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*
+[entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*/,/ (?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)
+(?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)/,/ and [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*
+[entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*/,/ and (?<phenotype> [entity=B-NeuroBehavior] [entity=I-NeuroBehavior]*|[entity=B-Disease] [entity=I-Disease]*)
+(?<phenotype> [] disease)
+(?<phenotype> [] disorder)
+(?<phenotype> [] syndrome)
+(?<phenotype> []/'/s disease)(?<phenotype> [] /'/s disease)

@@ -1,0 +1,5 @@
+lemmas_br_br=[lemma=project]|[lemma=connect]|[lemma=pathway]|[lemma=receive]|[lemma=innervate]|[lemma=originate]|[lemma=connection]|[lemma=projection]|[lemma=connectivity]
+lemmas_br_ph=[lemma=implicate]|[lemma=play]|[lemma=develop]|[lemma=involve]|[lemma=regulate]|[lemma=control]|[lemma=produce]
+damage=([lemma=damage]|loss of function|[lemma=impair]|[lemma=defect]|[lemma=destroy]|[lemma=destruct])
+fromto=(>nmod_from)|(>nmod_of)|(>nmod_to)|(>nmod_in)|(>nmod_with)
+connection=cortical fibers|fiber|fibers|afferent|afferents|efferent|efferents|neuron|neurons

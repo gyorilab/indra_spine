@@ -1,6 +1,6 @@
 import csv
 import json
-import os.path
+import os
 import itertools
 import pickle
 from collections import defaultdict
